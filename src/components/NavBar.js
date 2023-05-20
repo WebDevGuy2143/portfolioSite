@@ -2,13 +2,7 @@ import Link from "next/link"
 import React from "react"
 import Logo from "./Logo"
 import { useRouter } from "next/router"
-import {
-  FacebookIcon,
-  GithubIcon,
-  LinkedInIcon,
-  PinterestIcon,
-  TwitterIcon,
-} from "./icons"
+import { FacebookIcon, GithubIcon, LinkedInIcon, TwitterIcon } from "./icons"
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter()
