@@ -18,6 +18,24 @@ module.exports = {
         primary: "#B63E96", // 240,86,199
         primaryDark: "#58E6D9", // 80,230,217},
       },
+      keyframes: {
+        "fade-in-down": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-10px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+      },
+      animation: {
+        "fade-in-down": "fade-in-down 0.500s ease-out",
+      },
+      dropShadow: {
+        "3xl": "0 35px 35px rgba(0, 0, 0, 0.25)",
+      },
     },
   },
   plugins: [],

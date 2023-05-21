@@ -32,28 +32,28 @@ const NavBar = () => {
 
       <nav className="flex items-center justify-center flex-wrap">
         <Link
-          className="hover:animate-bounce w-6 mx-3"
+          className="hover:animate-bounce w-6 mx-3 hover:drop-shadow-2xl"
           href="/"
           target={"_blank"}
         >
           <FacebookIcon />
         </Link>
         <Link
-          className="hover:animate-bounce w-6 mx-3"
+          className="hover:animate-bounce w-6 mx-3 hover:drop-shadow-3xl"
           href="/"
           target={"_blank"}
         >
           <LinkedInIcon />
         </Link>
         <Link
-          className="hover:animate-bounce w-6 mx-3"
+          className="hover:animate-bounce w-6 mx-3 hover:drop-shadow-3xl"
           href="/"
           target={"_blank"}
         >
           <GithubIcon />
         </Link>
         <Link
-          className="hover:animate-bounce w-6 ml-3"
+          className="hover:animate-bounce w-6 ml-3 hover:drop-shadow-3xl"
           href="/"
           target={"_blank"}
         >
