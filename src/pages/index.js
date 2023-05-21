@@ -57,7 +57,7 @@ export default function Home() {
                   href="mailto:genehowell9@gmail.com"
                   className="ml-4 text-lg font-medium capitalize text-dark underline"
                 >
-                  Contact
+                  Contact Me
                 </Link>
               </div>
             </div>
