@@ -8,7 +8,13 @@ const Footer = () => {
       <Layout className="py-8 flex items-center justify-between">
         <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
         <div className="flex items-center">
-          Site made with <span className="text-primary text-2xl px-1">❤️</span>
+          Site made with{" "}
+          <span
+            className="text-primary text-2xl px-1 hover:scale-125 ease-in duration-300 hover:cursor-pointer
+          "
+          >
+            ❤️
+          </span>
         </div>
         <p>
           Designed and Developed by{" "}

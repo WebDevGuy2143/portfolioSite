@@ -22,7 +22,7 @@ const CustomLink = ({ href, title, className = "" }) => {
 
 const NavBar = () => {
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between sticky top-0 z-50 bg-light border-b-2">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
@@ -33,28 +33,28 @@ const NavBar = () => {
       <nav className="flex items-center justify-center flex-wrap">
         <Link
           className="hover:animate-bounce w-6 mx-3 hover:drop-shadow-2xl"
-          href="/"
+          href="https://www.facebook.com/gene.howell.webguy"
           target={"_blank"}
         >
           <FacebookIcon />
         </Link>
         <Link
           className="hover:animate-bounce w-6 mx-3 hover:drop-shadow-3xl"
-          href="/"
+          href="https://www.linkedin.com/in/genehowellwebdev/"
           target={"_blank"}
         >
           <LinkedInIcon />
         </Link>
         <Link
           className="hover:animate-bounce w-6 mx-3 hover:drop-shadow-3xl"
-          href="/"
+          href="https://github.com/WebDevGuy2143"
           target={"_blank"}
         >
           <GithubIcon />
         </Link>
         <Link
           className="hover:animate-bounce w-6 ml-3 hover:drop-shadow-3xl"
-          href="/"
+          href="https://twitter.com/GeneHowell3142"
           target={"_blank"}
         >
           <TwitterIcon />

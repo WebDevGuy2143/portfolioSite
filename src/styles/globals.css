@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.contactAnimate::after,
+.contactAnimate::before {
+  width: 100%;
+  left: 0;
+}
+
+.contactAnimate::after,
+.contactAnimate::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  width: 0;
+  right: 0;
+  height: 3px;
+}
+
+.contactAnimate::before {
+  transition: width 0.4s cubic-bezier(0.51, 0.18, 0, 0.88) 0.1s;
+  background: #2196f3;
+}
+
+.contactAnimate::after {
+  transition: width 0.2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+  background: #f44336;
+}
