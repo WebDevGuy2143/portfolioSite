@@ -1,8 +1,8 @@
 import Link from "next/link"
 import React from "react"
-import Logo from "./Logo"
 import { useRouter } from "next/router"
 import { FacebookIcon, GithubIcon, LinkedInIcon, TwitterIcon } from "./icons"
+import Logo from "./Logo"
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter()
@@ -10,7 +10,7 @@ const CustomLink = ({ href, title, className = "" }) => {
     <Link href={href} className={`${className} relative group`}>
       {title}
       <span
-        className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 text-slate-800 ${
+        className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 text-slate-900 ${
           router.asPath === href ? "w-full" : "w-0"
         }`}
       >
@@ -28,17 +28,17 @@ const NavBar = () => {
         <CustomLink
           href="/about"
           title="About"
-          className="mx-4 text-slate-800"
+          className="mx-4 text-slate-900"
         />
         <CustomLink
           href="/projects"
           title="Projects"
-          className="mx-4 text-slate-800"
+          className="mx-4 text-slate-900"
         />
         <CustomLink
           href="/articles"
           title="Articles"
-          className="ml-4 text-slate-800"
+          className="ml-4 text-slate-900"
         />
       </nav>
 
