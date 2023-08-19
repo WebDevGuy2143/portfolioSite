@@ -59,9 +59,9 @@ export default function Home() {
               <p className="my-4 text-base font-medium text-slate-900">
                 From the very beginning, my journey in the realm of technology
                 began with web development. However, as I progressed through
-                college, my horizons expanded, and I discovered my deep-seated
-                passion for programming, graphic design, video production, and
-                radio.
+                college, my horizons expanded, and I discovered my
+                &ldquo;deep-seated&rdquo; passion for programming, graphic
+                design, video production, and radio.
               </p>
               <p className="my-4 text-base font-medium text-slate-900">
                 Today, I bring together my diverse expertise to create

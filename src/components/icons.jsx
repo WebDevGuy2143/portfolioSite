@@ -3,6 +3,8 @@ import * as React from "react"
 export const FacebookIcon = (className, ...rest) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
     xmlSpace="preserve"
     viewBox="0 0 291.319 291.319"
     {...rest}
