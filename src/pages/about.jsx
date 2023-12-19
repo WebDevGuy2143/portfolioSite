@@ -4,6 +4,9 @@ import Head from "next/head"
 import Image from "next/image"
 import React from "react"
 import profilePic from "../../public/images/profile/developer-pic-2.jpg"
+import Experience from "@/components/Experience"
+import Skills from "@/components/Skills"
+import Education from "@/components/Education"
 
 const about = () => {
   return (
@@ -17,7 +20,10 @@ const about = () => {
       </Head>
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
-          <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />
+          <AnimatedText
+            text="Don’t wait for inspiration. It comes while working. – Henri Matisse"
+            className="mb-16 text-4xl"
+          />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 ">
@@ -57,6 +63,9 @@ const about = () => {
               </div>
             </div>
           </div>
+          <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>

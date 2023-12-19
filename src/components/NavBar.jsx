@@ -24,15 +24,15 @@ const NavBar = () => {
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between sticky top-0 z-50 bg-amber-50">
       <nav>
-        <CustomLink href="/" title="Home" className="mr-4" />
+        <CustomLink href="/" title="Home" className="mr-4 text-slate-900" />
         <CustomLink
           href="/about"
           title="About"
           className="mx-4 text-slate-900"
         />
         <CustomLink
-          href="/projects"
-          title="Projects"
+          href="/myWorks"
+          title="My Work"
           className="mx-4 text-slate-900"
         />
         <CustomLink
