@@ -49,7 +49,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ title, img, link, alt }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative hover:bg-violet-700/75 transition-all">
       <div className="relative w-full mx-auto">
         <Link href={link}>
           <Image
@@ -80,7 +80,7 @@ const myWorks = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText
-            text="The worst enemy to creativity is self-doubt.” – Sylvia Plath"
+            text='"The worst enemy to creativity is self-doubt.” – Sylvia Plath"'
             className="mb-16 text-4xl"
           />
 
@@ -89,7 +89,7 @@ const myWorks = () => {
               <Project
                 title="Web Development"
                 img={project1}
-                link="/"
+                link="/webProjects"
                 alt="Web Development Projects"
               />
             </div>
@@ -97,7 +97,7 @@ const myWorks = () => {
               <Project
                 title="Graphic Design"
                 img={project2}
-                link="/"
+                link="/graphicDesignProjects"
                 alt="Graphic Design Projects"
               />
             </div>

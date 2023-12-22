@@ -21,7 +21,7 @@ const about = () => {
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText
-            text="Don’t wait for inspiration. It comes while working. – Henri Matisse"
+            text='"Don’t wait for inspiration. It comes while working." – Henri Matisse'
             className="mb-16 text-4xl"
           />
           <div className="grid w-full grid-cols-8 gap-16">
