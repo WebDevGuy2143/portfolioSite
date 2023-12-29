@@ -12,8 +12,8 @@ import project4 from "../../public/images/projects/AudioProduction.jpg"
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 hover:bg-violet-700/75 transition-all hover:text-white">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
+    <article className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 hover:bg-violet-700/75 transition-all hover:text-white dark:bg-dark dark:border-light">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light" />
       <Link
         href={link}
         target="_blank"
@@ -22,27 +22,33 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
       <div className="w-full flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary font-medium text-xl dark:text-primaryDark">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light">
+            {title}
+          </h2>
         </Link>
-        <p className="my-2 font-medium text-dark hover:text-white">{summary}</p>
+        <p className="my-2 font-medium text-dark hover:text-white dark:text-light">
+          {summary}
+        </p>
         <div className="mt-2 flex items-center">
           <Link
             href={github}
             target="_blank"
-            className="w-10 hover:scale-110 transition-all"
+            className="w-10 hover:scale-110 transition-all dark:text-light"
           >
             <GithubIcon />
           </Link>
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold hover:underline underline-offset-2 hover:scale-110 transition-all"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold hover:underline underline-offset-2 hover:scale-110 transition-all dark:bg-light dark:text-dark"
           >
             View My Project
           </Link>
@@ -54,17 +60,21 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ title, summary, type, img, link, github }) => {
   return (
-    <article className="w-full flex-col flex items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative hover:bg-violet-700/75 transition-all hover:text-white">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark rounded-br-3xl" />
+    <article className="w-full flex-col flex items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative hover:bg-violet-700/75 transition-all hover:text-white dark:bg-dark dark:border-light">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light" />
       <Link
         href={link}
         target="_blank"
         className="w-full cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <Image
+          src={img}
+          alt={title}
+          className="w-full h-auto dark:text-light"
+        />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4 hover:text-white">
-        <span className="text-primary outline-color: #000 font-medium text-xl">
+        <span className="text-primary outline-color: #000 font-medium text-xl dark:text-primaryDark">
           {type}
         </span>
         <Link
@@ -72,16 +82,18 @@ const Project = ({ title, summary, type, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold dark:text-light">
+            {title}
+          </h2>
         </Link>
-        <p className="my-2 font-medium text-dark hover:text-white hover:transition-none">
+        <p className="my-2 font-medium text-dark hover:text-white hover:transition-none dark:text-light">
           {summary}
         </p>
         <div className="w-full mt-2 flex items-center justify-between">
           <Link
             href={link}
             target="_blank"
-            className=" text-lg font-semibold hover:underline underline-offset-2 hover:scale-110 transition-all"
+            className=" text-lg font-semibold hover:underline underline-offset-2 hover:scale-110 transition-all dark:text-light"
           >
             View My Project
           </Link>
@@ -108,11 +120,11 @@ const webProjects = () => {
           content="Gene Howell - Digital media specialist skilled in video, graphics, web development, and radio production. Transforming ideas into captivating digital experiences for maximum impact. Let's create something extraordinary!"
         />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center">
+      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text='“Don’t wait for inspiration. It comes while working." – Henri Matisse'
-            className="mb-16 text-4xl"
+            className="!text-6xl !text-center xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
           />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32">

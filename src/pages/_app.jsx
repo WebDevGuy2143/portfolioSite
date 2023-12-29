@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
-        className={`${nunito.variable} font-nunito bg-light w-full min-h-screen`}
+        className={`${nunito.variable} font-nunito bg-light dark:bg-dark w-full min-h-screen`}
       >
         <NavBar />
         <Component {...pageProps} />

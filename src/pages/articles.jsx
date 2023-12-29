@@ -10,34 +10,44 @@ import article3 from "../../public/images/articles/create modal component in rea
 
 const Article = ({ img, title, date, link }) => {
   return (
-    <li className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4">
+    <li className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark hover:scale-110 hover:transition-all">
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-xl font-semibold hover:underline">
+        <h2 className="capitalize text-xl font-semibold hover:underline dark:text-light">
           {title}
         </h2>
       </Link>
-      <span className="text-primary font-semibold pl-4">{date}</span>
+      <span className="text-primary font-semibold pl-4 dark:text-primaryDark">
+        {date}
+      </span>
     </li>
   )
 }
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl hover:scale-105 hover:transition-all hover:text-light">
+    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl hover:text-light dark:bg-dark dark:border-light">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
       <Link
         href={link}
         target="_blank"
         className="w-full inline-block cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <Image
+          src={img}
+          alt={title}
+          className="w-full h-auto hover:scale-125 hover:transition-all hover:ease-in-out"
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+        />
       </Link>
       <Link href={link} target="_blank">
         <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline">
           {title}
         </h2>
         <p className="text-sm mb-2 hover:text-light">{summary}</p>
-        <span className="text-primary font-semibold">{time}</span>
+        <span className="text-primary font-semibold dark:text-primaryDark">
+          {time}
+        </span>
       </Link>
     </li>
   )
@@ -53,9 +63,12 @@ const articles = () => {
           content="Gene Howell - Digital media specialist skilled in video, graphics, web development, and radio production. Transforming ideas into captivating digital experiences for maximum impact. Let's create something extraordinary!"
         />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
+      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText text="Words Can Change The World!" className="mb-16" />
+          <AnimatedText
+            text="Words Can Change The World!"
+            className="!text-6xl !text-center xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
+          />
           <ul className="grid grid-cols-2 gap-16">
             <FeaturedArticle
               title="Build A Custom Pagination Component In ReachJS From Scratch"

@@ -17,6 +17,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         href={link}
         target="_blank"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+        priority
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
       >
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
@@ -56,6 +58,8 @@ const Project = ({ title, img, link, alt }) => {
             className="h-64 w-full object-cover rounded-md"
             src={img}
             alt={alt}
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
           />
           <div className="absolute inset-0 bg-gray-700 opacity-60 rounded-md"></div>
           <div className="absolute inset-0 flex items-center justify-center">
@@ -81,7 +85,7 @@ const myWorks = () => {
         <Layout className="pt-16">
           <AnimatedText
             text='"The worst enemy to creativity is self-doubt.” – Sylvia Plath"'
-            className="mb-16 text-4xl"
+            className="!text-6xl !text-center xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
           />
 
           <div className="grid grid-cols-12 gap-24">
