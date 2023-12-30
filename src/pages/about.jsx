@@ -7,6 +7,7 @@ import profilePic from "../../public/images/profile/developer-pic-2.jpg"
 import Experience from "@/components/Experience"
 import Skills from "@/components/Skills"
 import Education from "@/components/Education"
+import TransitionEffect from "@/components/TransitionEffect"
 
 const about = () => {
   return (
@@ -18,6 +19,7 @@ const about = () => {
           content="Gene Howell - Digital media specialist skilled in video, graphics, web development, and radio production. Transforming ideas into captivating digital experiences for maximum impact. Let's create something extraordinary!"
         />
       </Head>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText

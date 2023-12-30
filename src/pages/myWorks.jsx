@@ -9,6 +9,7 @@ import project1 from "../../public/images/projects/WebDev.jpg"
 import project2 from "../../public/images/projects/graphicDesign.jpg"
 import project3 from "../../public/images/projects/videoProduction.jpg"
 import project4 from "../../public/images/projects/AudioProduction.jpg"
+import TransitionEffect from "@/components/TransitionEffect"
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -81,15 +82,16 @@ const myWorks = () => {
           content="Gene Howell - Digital media specialist skilled in video, graphics, web development, and radio production. Transforming ideas into captivating digital experiences for maximum impact. Let's create something extraordinary!"
         />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText
             text='"The worst enemy to creativity is self-doubt.” – Sylvia Plath"'
-            className="!text-6xl !text-center xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
+            className="mb-16 !text-6xl !text-center xl:!text-5xl lg:!text-center lg:!text-6xl md:mb-6 md:!text-5xl sm:!text-3xl"
           />
 
-          <div className="grid grid-cols-12 gap-24">
-            <div className="col-span-6">
+          <div className="flex flex-wrap gap-24">
+            <div className="flex-col-6 sm:col-span-12">
               <Project
                 title="Web Development"
                 img={project1}
@@ -97,7 +99,7 @@ const myWorks = () => {
                 alt="Web Development Projects"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Graphic Design"
                 img={project2}
@@ -106,7 +108,7 @@ const myWorks = () => {
               />
             </div>
 
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Video Production"
                 img={project3}
@@ -114,7 +116,7 @@ const myWorks = () => {
                 alt="Video Production Projects"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-12">
               <Project
                 title="Audio Production"
                 img={project4}

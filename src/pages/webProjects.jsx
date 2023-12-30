@@ -9,32 +9,38 @@ import project1 from "../../public/images/projects/WebDev.jpg"
 import project2 from "../../public/images/projects/graphicDesign.jpg"
 import project3 from "../../public/images/projects/videoProduction.jpg"
 import project4 from "../../public/images/projects/AudioProduction.jpg"
+import TransitionEffect from "@/components/TransitionEffect"
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 hover:bg-violet-700/75 transition-all hover:text-white dark:bg-dark dark:border-light">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light" />
+    <article className="relative flex w-full items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light p-12 shadow-2xl dark:border-light dark:bg-dark lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 ">
+      <div className="absolute top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] rounded-br-3xl bg-dark dark:bg-light  xs:-right-2 xs:h-[102%] xs:w-[100%] xs:rounded-[1.5rem]" />
       <Link
         href={link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <Image
+          src={img}
+          alt={title}
+          className="w-full h-auto hover:scale-125 hover:transition-all hover:ease-in-out"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </Link>
-      <div className="w-full flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark">
+      <div className="flex w-1/2 flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-xl font-medium text-primary dark:text-primaryDark xs:text-base">
           {type}
         </span>
         <Link
           href={link}
           target="_blank"
-          className="hover:underline underline-offset-2"
+          className="underline-offset-2 hover:underline"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light">
+          <h2 className="my-2 w-full text-left text-4xl font-bold lg:text-3xl xs:text-2xl">
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-dark hover:text-white dark:text-light">
+        <p className="my-2 rounded-md font-medium text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
         <div className="mt-2 flex items-center">
@@ -48,7 +54,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold hover:underline underline-offset-2 hover:scale-110 transition-all dark:bg-light dark:text-dark"
+            className="ml-4 rounded-lg bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark  sm:px-4 sm:text-base "
           >
             View My Project
           </Link>
@@ -60,7 +66,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ title, summary, type, img, link, github }) => {
   return (
-    <article className="w-full flex-col flex items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative hover:bg-violet-700/75 transition-all hover:text-white dark:bg-dark dark:border-light">
+    <article className="w-full flex-col flex items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative  dark:bg-dark dark:border-light">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light" />
       <Link
         href={link}
@@ -70,10 +76,10 @@ const Project = ({ title, summary, type, img, link, github }) => {
         <Image
           src={img}
           alt={title}
-          className="w-full h-auto dark:text-light"
+          className="w-full h-auto dark:text-light hover:scale-125 hover:transition-all hover:ease-in-out"
         />
       </Link>
-      <div className="w-full flex flex-col items-start justify-between mt-4 hover:text-white">
+      <div className="w-full flex flex-col items-start justify-between mt-4">
         <span className="text-primary outline-color: #000 font-medium text-xl dark:text-primaryDark">
           {type}
         </span>
@@ -86,7 +92,7 @@ const Project = ({ title, summary, type, img, link, github }) => {
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-dark hover:text-white hover:transition-none dark:text-light">
+        <p className="my-2 font-medium text-dark hover:transition-none dark:text-light">
           {summary}
         </p>
         <div className="w-full mt-2 flex items-center justify-between">
@@ -120,15 +126,19 @@ const webProjects = () => {
           content="Gene Howell - Digital media specialist skilled in video, graphics, web development, and radio production. Transforming ideas into captivating digital experiences for maximum impact. Let's create something extraordinary!"
         />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
-        <Layout className="pt-16">
+      <TransitionEffect />
+      <main className="mb-16 flex w-full flex-col items-center justify-center dark:text-light">
+        <Layout
+          className="z-0 inline-block h-full w-full bg-light p-32 dark:bg-dark xl:!pl-6 lg:!p-16 
+      md:!p-12 xs:!p-2 sm:!p-8 pt-16 overflow-hidden"
+        >
           <AnimatedText
             text='“Don’t wait for inspiration. It comes while working." – Henri Matisse'
-            className="!text-6xl !text-center xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
+            className="inline-block text-dark dark:text-light font-bold w-full capitalize mb-16 md:mb-6 md:!text-3xl !text-6xl !leading-tight lg:!text-6xl sm:!mb-8 sm:!text-3xl xs:!mb-5 xs:!text-4xl xl:text-6xl"
           />
 
-          <div className="grid grid-cols-12 gap-24 gap-y-32">
-            <div className="col-span-12">
+          <div className="w-full grid grid-cols-12 center gap-24 gap-y-32 xl:gap-x-16 lg:w-full lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12 md:col-span-9">
               <FeaturedProject
                 title="Crypto Screener Application"
                 img={project1}
@@ -140,7 +150,7 @@ const webProjects = () => {
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 md:col-span-9">
               <Project
                 title="Crypto Screener Application"
                 img={project1}
@@ -152,7 +162,7 @@ const webProjects = () => {
                 type="Project"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 md:col-span-9">
               <Project
                 title="Crypto Screener Application"
                 img={project1}
@@ -164,7 +174,7 @@ const webProjects = () => {
                 type="Project"
               />
             </div>
-            <div className="col-span-12">
+            <div className="col-span-12 md:col-span-9">
               <FeaturedProject
                 title="Crypto Screener Application"
                 img={project1}
@@ -176,7 +186,7 @@ const webProjects = () => {
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 md:col-span-9">
               <Project
                 title="Crypto Screener Application"
                 img={project1}
@@ -188,7 +198,7 @@ const webProjects = () => {
                 type="Project"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 md:col-span-9">
               <Project
                 title="Crypto Screener Application"
                 img={project1}

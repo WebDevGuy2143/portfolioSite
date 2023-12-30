@@ -8,6 +8,7 @@ import Link from "next/link"
 import AnimatedText from "@/components/AnimatedText"
 import { LinkArrow } from "@/components/icons"
 import Layout from "@/components/Layout"
+import TransitionEffect from "@/components/TransitionEffect"
 
 export default function Home() {
   return (
@@ -19,8 +20,9 @@ export default function Home() {
           content="Gene Howell - Digital media specialist skilled in video, graphics, web development, and radio production. Transforming ideas into captivating digital experiences for maximum impact. Let's create something extraordinary!"
         />
       </Head>
-      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
-        <Layout className="pt-0 md:pt-16 sm:pt-8">
+      <TransitionEffect />
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light md:pt-4 ">
+        <Layout className="pt-0">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 relative">
               <div className="dark:hidden absolute top-32 xl:top-24 left-52 w-96 h-96 rounded-full mix-blend-multiply filter blur-xl 2xl:blur-3xl opacity-70 animate-blob animation-delay-1000 bg-purple-300"></div>
@@ -30,7 +32,7 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="Gene Howell"
-                className="w-full h-auto rounded-full relative z-10 lg:flex-col lg:w-full md:hidden md:w-full"
+                className="w-full h-auto rounded-full relative z-10 lg:flex-col lg:w-full md:pb-1 md:w-full lg:mb-16"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />

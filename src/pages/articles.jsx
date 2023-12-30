@@ -7,16 +7,17 @@ import React from "react"
 import article1 from "../../public/images/articles/pagination component in reactjs.jpg"
 import article2 from "../../public/images/articles/create loading screen in react js.jpg"
 import article3 from "../../public/images/articles/create modal component in react using react portals.png"
+import TransitionEffect from "@/components/TransitionEffect"
 
 const Article = ({ img, title, date, link }) => {
   return (
-    <li className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark hover:scale-110 hover:transition-all">
+    <li className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark hover:scale-110 hover:transition-all sm:flex-col">
       <Link href={link} target="_blank">
         <h2 className="capitalize text-xl font-semibold hover:underline dark:text-light">
           {title}
         </h2>
       </Link>
-      <span className="text-primary font-semibold pl-4 dark:text-primaryDark">
+      <span className="text-primary font-semibold pl-4 dark:text-primaryDark sm:self-start sm:pl-0 xs:text-sm">
         {date}
       </span>
     </li>
@@ -41,7 +42,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         />
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline">
+        <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline xs:text-lg">
           {title}
         </h2>
         <p className="text-sm mb-2 hover:text-light">{summary}</p>
@@ -63,13 +64,14 @@ const articles = () => {
           content="Gene Howell - Digital media specialist skilled in video, graphics, web development, and radio production. Transforming ideas into captivating digital experiences for maximum impact. Let's create something extraordinary!"
         />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text="Words Can Change The World!"
             className="!text-6xl !text-center xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
           />
-          <ul className="grid grid-cols-2 gap-16">
+          <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
               title="Build A Custom Pagination Component In ReachJS From Scratch"
               summary="Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project."

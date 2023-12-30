@@ -28,19 +28,19 @@ const Education = () => {
         <div className="absolute left-9 w-[4px] h-full bg-dark dark:bg-light origin-top md:w-[2px] md:left-[30px] xs:left-[20px]" />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type={"High School Diploma"}
+            type={"Marietta High School Diploma"}
             time={"2004-2008"}
             place={"Marietta High School"}
             info={
-              "Completed all general education high school requirements for the state of Georgia."
+              "Completed high school level general education and elective courses. These courses comprised of Math, Science, Literature, Reading and Writing."
             }
           />
           <Details
-            type={"Internet Specialist"}
+            type={"Internet Specialist Certificate"}
             time={"2009-2015"}
             place={"Chattahoochee Technical College"}
             info={
-              "Completed College courses in web programming and general education courses."
+              "Completed college certificate level courses in Internet Specialist. These courses comprised of Web Development, Programming, and other college level General Education courses"
             }
           />
           <Details
@@ -48,7 +48,7 @@ const Education = () => {
             time={"2018-2020"}
             place={"Gulf Coast State College"}
             info={
-              "Completed associate level courses in digital media. These courses comprised of Web Development 1, Graphic Design 1 and 2, Video and Audio Production, software programming, and some Project Management Courses."
+              "Completed Associate level courses in digital media. These courses comprised of Web Development 1, Graphic Design 1 and 2, Video and Audio Production, software programming, and some Project Management Courses."
             }
           />
           <Details
