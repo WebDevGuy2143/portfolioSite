@@ -184,12 +184,10 @@ const webProjects = () => {
           <div className="w-full grid grid-cols-12 center gap-24 gap-y-32 xl:gap-x-16 lg:w-full lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12 md:col-span-9">
               <FeaturedProject
-                title="Crypto Screener Application"
+                title="Boilerplate Featured project"
                 img={project1}
                 tags={["HTML", "CSS", "JavaScript", "PHP"]}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
+                summary="Web dev project boilerplate descriptions highlight key technologies like front-end frameworks (e.g., React), back-end tools (Node.js, Django), version control (Git), package managers (npm, yarn), styling preprocessors (Sass, Less), and deployment platforms (Heroku, AWS). Essentially, it sets the groundwork for project success."
                 link="/"
                 github="/"
                 type="Featured Project"
@@ -197,12 +195,10 @@ const webProjects = () => {
             </div>
             <div className="col-span-6 md:col-span-9">
               <Project
-                title="Crypto Screener Application"
+                title="Boilerplate Project"
                 img={project1}
                 tags={["HTML", "CSS", "JavaScript", "PHP"]}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
+                summary="Web dev project boilerplate descriptions highlight key technologies like front-end frameworks (e.g., React), back-end tools (Node.js, Django), version control (Git), package managers (npm, yarn), styling preprocessors (Sass, Less), and deployment platforms (Heroku, AWS). Essentially, it sets the groundwork for project success."
                 link="/"
                 github="/"
                 type="Project"
@@ -210,12 +206,10 @@ const webProjects = () => {
             </div>
             <div className="col-span-6 md:col-span-9">
               <Project
-                title="Crypto Screener Application"
+                title="Boilerplate Project"
                 img={project1}
                 tags={["HTML", "CSS", "JavaScript", "PHP"]}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
+                summary="Web dev project boilerplate descriptions highlight key technologies like front-end frameworks (e.g., React), back-end tools (Node.js, Django), version control (Git), package managers (npm, yarn), styling preprocessors (Sass, Less), and deployment platforms (Heroku, AWS). Essentially, it sets the groundwork for project success."
                 link="/"
                 github="/"
                 type="Project"
@@ -223,12 +217,10 @@ const webProjects = () => {
             </div>
             <div className="col-span-12 md:col-span-9">
               <FeaturedProject
-                title="Crypto Screener Application"
+                title="Boilerplate Featured project"
                 img={project1}
                 tags={["HTML", "CSS", "JavaScript", "PHP"]}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
+                summary="Web dev project boilerplate descriptions highlight key technologies like front-end frameworks (e.g., React), back-end tools (Node.js, Django), version control (Git), package managers (npm, yarn), styling preprocessors (Sass, Less), and deployment platforms (Heroku, AWS). Essentially, it sets the groundwork for project success."
                 link="/"
                 github="/"
                 type="Featured Project"
@@ -236,12 +228,10 @@ const webProjects = () => {
             </div>
             <div className="col-span-6 md:col-span-9">
               <Project
-                title="Crypto Screener Application"
+                title="Boilerplate Project"
                 img={project1}
                 tags={["HTML", "CSS", "JavaScript", "PHP"]}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
+                summary="Web dev project boilerplate descriptions highlight key technologies like front-end frameworks (e.g., React), back-end tools (Node.js, Django), version control (Git), package managers (npm, yarn), styling preprocessors (Sass, Less), and deployment platforms (Heroku, AWS). Essentially, it sets the groundwork for project success."
                 link="/"
                 github="/"
                 type="Project"
@@ -249,12 +239,10 @@ const webProjects = () => {
             </div>
             <div className="col-span-6 md:col-span-9">
               <Project
-                title="Crypto Screener Application"
+                title="Boilerplate Project"
                 img={project1}
                 tags={["HTML", "CSS", "JavaScript", "PHP"]}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
+                summary="Web dev project boilerplate descriptions highlight key technologies like front-end frameworks (e.g., React), back-end tools (Node.js, Django), version control (Git), package managers (npm, yarn), styling preprocessors (Sass, Less), and deployment platforms (Heroku, AWS). Essentially, it sets the groundwork for project success."
                 link="/"
                 github="/"
                 type="Project"
