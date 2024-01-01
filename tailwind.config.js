@@ -14,6 +14,9 @@ module.exports = {
         nunito: [`var(--font-nunito)`, ...fontFamily.sans],
       },
       screens: {
+        "3xl": { max: "3000px" },
+        // => @media (max-width: 3000px) { ... }
+
         "2xl": { max: "1535px" },
         // => @media (max-width: 1535px) { ... }
 

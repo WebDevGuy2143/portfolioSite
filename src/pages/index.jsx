@@ -25,10 +25,6 @@ export default function Home() {
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 relative">
-              <div className="dark:hidden absolute top-32 xl:top-24 left-52 w-96 h-96 rounded-full mix-blend-multiply filter blur-xl 2xl:blur-3xl opacity-70 animate-blob animation-delay-1000 bg-purple-300"></div>
-              <div className="dark:hidden absolute top-20 xl:top-28 left-5 w-96 h-96 rounded-full mix-blend-multiply filter blur-xl 2xl:blur-3xl opacity-70 animate-blob animation-delay-2000 bg-blue-300"></div>
-              <div className="dark:hidden absolute -bottom-8 left-40 w-96 h-96 rounded-full mix-blend-multiply filter blur-xl 2xl:blur-3xl opacity-70 animate-blob animation-delay-3000 bg-orange-300"></div>
-              <div className="dark:hidden absolute -bottom-5 left-15 w-96 2xl:!w-80 h-96 rounded-full mix-blend-multiply filter blur-xl 2xl:blur-3xl opacity-70 animate-blob animation-delay-4000 bg-green-300"></div>
               <Image
                 src={profilePic}
                 alt="Gene Howell"
