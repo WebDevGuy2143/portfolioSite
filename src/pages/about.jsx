@@ -24,7 +24,7 @@ const about = () => {
         <Layout className="pt-16">
           <AnimatedText
             text='"Don’t wait for inspiration. It comes while working." – Henri Matisse'
-            className="pb-10 !text-6xl !text-center xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
+            className="mb-16 !text-6xl !text-center xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
           />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:!order-2 md:!col-span-8">

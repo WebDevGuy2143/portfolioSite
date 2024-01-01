@@ -26,7 +26,7 @@ const Article = ({ img, title, date, link }) => {
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl  dark:bg-dark dark:border-light">
+    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
       <Link
         href={link}
@@ -69,7 +69,7 @@ const articles = () => {
         <Layout className="pt-16">
           <AnimatedText
             text="“Great things are done by a series of small things brought together.” – Vincent Van Gogh"
-            className="!text-6xl !text-center xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl sm:mb-16"
+            className="mb-16 !text-6xl !text-center xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl sm:mb-16"
           />
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
