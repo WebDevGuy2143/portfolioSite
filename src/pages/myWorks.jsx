@@ -116,7 +116,7 @@ const myWorks = () => {
                 alt="Video Production Projects"
               />
             </div>
-            <div className="col-span-12">
+            <div className="col-span-12 2xl:col-span-6">
               <Project
                 title="Audio Production"
                 img={project4}

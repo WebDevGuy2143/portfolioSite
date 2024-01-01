@@ -35,63 +35,33 @@ const Experience = () => {
         <div className="absolute left-9 w-[4px] h-full bg-dark dark:bg-light origin-top md:w-[2px] md:left-[30px] xs:left-[20px]" />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position={"Software Engineer"}
-            company={"Google"}
-            companyLink={"www.google.com"}
-            time={"2022-Present"}
-            address={"Mountain View, CA"}
+            position={"Full-stack Web Developer"}
+            company={"Howell Creative"}
+            companyLink={"http://www.genehowell.com"}
+            time={"2010-Present"}
+            address={"Panama City, Fl"}
             work={
-              "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+              "I help provide a clean, yet functional online presense for local businesses in showcasing the best way in what they have to offer towards their target audience."
             }
           />
           <Details
-            position={"Software Engineer"}
-            company={"Google"}
-            companyLink={"www.google.com"}
-            time={"2022-Present"}
-            address={"Mountain View, CA"}
+            position={"Student Assistant"}
+            company={"Gulf Coast State College"}
+            companyLink={"www.gcsc.com"}
+            time={"2021-2022"}
+            address={"Panama City, Fl"}
             work={
-              "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+              "I worked as a student assistant for the Digital Media and Design program. During my timeframe, I participated in helping the program with areas such as graphic design, web development, radio broadcasting, video production (editing and camera work)."
             }
           />
           <Details
-            position={"Software Engineer"}
-            company={"Google"}
-            companyLink={"www.google.com"}
-            time={"2022-Present"}
-            address={"Mountain View, CA"}
+            position={"Web Developer Intern"}
+            company={"Kerigan Marketing Associates"}
+            companyLink={"https://keriganmarketing.com/"}
+            time={"2020-2021"}
+            address={"Mexico Beach, Fl"}
             work={
-              "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-            }
-          />
-          <Details
-            position={"Software Engineer"}
-            company={"Google"}
-            companyLink={"www.google.com"}
-            time={"2022-Present"}
-            address={"Mountain View, CA"}
-            work={
-              "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-            }
-          />
-          <Details
-            position={"Software Engineer"}
-            company={"Google"}
-            companyLink={"www.google.com"}
-            time={"2022-Present"}
-            address={"Mountain View, CA"}
-            work={
-              "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-            }
-          />
-          <Details
-            position={"Software Engineer"}
-            company={"Google"}
-            companyLink={"www.google.com"}
-            time={"2022-Present"}
-            address={"Mountain View, CA"}
-            work={
-              "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+              "As the web intern at Kerigan Marketing Associates for the allotted three months, I dealt with front and back end work. I helped keep websites up to date and made sure everything was functional and up to code with today's standards."
             }
           />
         </ul>

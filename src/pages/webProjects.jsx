@@ -11,7 +11,40 @@ import project3 from "../../public/images/projects/videoProduction.jpg"
 import project4 from "../../public/images/projects/AudioProduction.jpg"
 import TransitionEffect from "@/components/TransitionEffect"
 
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+const Tags = ({ text }) => {
+  // Function to get the dynamic class based on the tag
+  const getTagClass = () => {
+    const lowerCaseText = text.toLowerCase()
+
+    switch (true) {
+      case lowerCaseText.includes("html"):
+        return "bg-red-100 text-red-800"
+      case lowerCaseText.includes("css"):
+        return "bg-purple-100 text-purple-800"
+      case lowerCaseText.includes("javascript"):
+        return "bg-pink-100 text-pink-800"
+      case lowerCaseText.includes("python"):
+        return "bg-indigo-100 text-indigo-800"
+      case lowerCaseText.includes("php"):
+        return "bg-purple-100 text-purple-800"
+      case lowerCaseText.includes("c++"):
+        return "bg-pink-100 text-pink-800"
+      default:
+        // Default styling for other tags
+        return "bg-blue-100 text-blue-800"
+    }
+  }
+
+  return (
+    <span
+      className={`text-xs text-center font-medium mt-2 px-2 py-3 rounded-full ${getTagClass()}`}
+    >
+      {text}
+    </span>
+  )
+}
+
+const FeaturedProject = ({ type, title, tags, summary, img, link, github }) => {
   return (
     <article className="relative flex w-full items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light p-12 shadow-2xl dark:border-light dark:bg-dark lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 ">
       <div className="absolute top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] rounded-br-3xl bg-dark dark:bg-light  xs:-right-2 xs:h-[102%] xs:w-[100%] xs:rounded-[1.5rem]" />
@@ -40,6 +73,12 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             {title}
           </h2>
         </Link>
+        <div className="w-[90%] relative flex flex-wrap sm:justify-center space-x-3 space-y-3">
+          {tags.map((tagItem, index) => (
+            <Tags key={index} text={tagItem} />
+          ))}
+        </div>
+
         <p className="my-2 rounded-md font-medium text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
@@ -64,7 +103,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   )
 }
 
-const Project = ({ title, summary, type, img, link, github }) => {
+const Project = ({ title, summary, tags, type, img, link, github }) => {
   return (
     <article className="w-full flex-col flex items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative  dark:bg-dark dark:border-light">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light" />
@@ -92,6 +131,11 @@ const Project = ({ title, summary, type, img, link, github }) => {
             {title}
           </h2>
         </Link>
+        <div className="w-[90%] relative flex flex-wrap sm:justify-center space-x-3 space-y-3">
+          {tags.map((tagItem, index) => (
+            <Tags key={index} text={tagItem} />
+          ))}
+        </div>
         <p className="my-2 font-medium text-dark hover:transition-none dark:text-light">
           {summary}
         </p>
@@ -142,6 +186,7 @@ const webProjects = () => {
               <FeaturedProject
                 title="Crypto Screener Application"
                 img={project1}
+                tags={["HTML", "CSS", "JavaScript", "PHP"]}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                 local currency."
@@ -154,6 +199,7 @@ const webProjects = () => {
               <Project
                 title="Crypto Screener Application"
                 img={project1}
+                tags={["HTML", "CSS", "JavaScript", "PHP"]}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                 local currency."
@@ -166,6 +212,7 @@ const webProjects = () => {
               <Project
                 title="Crypto Screener Application"
                 img={project1}
+                tags={["HTML", "CSS", "JavaScript", "PHP"]}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                 local currency."
@@ -178,6 +225,7 @@ const webProjects = () => {
               <FeaturedProject
                 title="Crypto Screener Application"
                 img={project1}
+                tags={["HTML", "CSS", "JavaScript", "PHP"]}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                 local currency."
@@ -190,6 +238,7 @@ const webProjects = () => {
               <Project
                 title="Crypto Screener Application"
                 img={project1}
+                tags={["HTML", "CSS", "JavaScript", "PHP"]}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                 local currency."
@@ -202,6 +251,7 @@ const webProjects = () => {
               <Project
                 title="Crypto Screener Application"
                 img={project1}
+                tags={["HTML", "CSS", "JavaScript", "PHP"]}
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                 It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                 local currency."
