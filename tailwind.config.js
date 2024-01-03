@@ -36,8 +36,9 @@ module.exports = {
         // => @media (max-width: 479px) { ... }
       },
       colors: {
-        dark: "#1b1b1b",
+        dark: "#303030",
         light: "rgb(255 251 235)",
+        moreLight: "slate-gray-500",
         primary: "#B63E96", // 240,86,199
         primaryDark: "#58E6D9", // 80,230,217},
       },

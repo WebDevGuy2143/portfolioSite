@@ -18,17 +18,17 @@ const Tags = ({ text }) => {
 
     switch (true) {
       case lowerCaseText.includes("html"):
-        return "bg-red-100 text-red-800"
+        return "bg-blue-600 text-light"
       case lowerCaseText.includes("css"):
-        return "bg-purple-100 text-purple-800"
+        return "bg-purple-600 text-light"
       case lowerCaseText.includes("javascript"):
-        return "bg-pink-100 text-pink-800"
+        return "bg-sky-600 text-light"
       case lowerCaseText.includes("python"):
-        return "bg-indigo-100 text-indigo-800"
+        return "bg-indigo-600 text-light"
       case lowerCaseText.includes("php"):
-        return "bg-purple-100 text-purple-800"
+        return "bg-purple-600 text-light"
       case lowerCaseText.includes("c++"):
-        return "bg-pink-100 text-pink-800"
+        return "bg-pink-600 text-light"
       default:
         // Default styling for other tags
         return "bg-blue-100 text-blue-800"
@@ -37,7 +37,7 @@ const Tags = ({ text }) => {
 
   return (
     <span
-      className={`text-xs text-center font-medium mt-2 px-2 py-3 rounded-full ${getTagClass()}`}
+      className={`text-xs text-center font-medium mt-2 px-2 py-3 rounded-full self-center ${getTagClass()}`}
     >
       {text}
     </span>
