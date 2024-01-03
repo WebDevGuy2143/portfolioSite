@@ -12,26 +12,32 @@ import project4 from "../../public/images/projects/AudioProduction.jpg"
 import TransitionEffect from "@/components/TransitionEffect"
 
 const Tags = ({ text }) => {
+  // Ensure text is an array
+  const tags = Array.isArray(text) ? text : [text]
+
+  // Function to get the dynamic class based on the tag
   // Function to get the dynamic class based on the tag
   const getTagClass = () => {
-    const lowerCaseText = text.toLowerCase()
+    const lowerCaseTags = tags.map((tag) => tag.toLowerCase())
 
-    switch (true) {
-      case lowerCaseText.includes("html"):
-        return "bg-blue-600 text-light"
-      case lowerCaseText.includes("css"):
-        return "bg-purple-600 text-light"
-      case lowerCaseText.includes("javascript"):
-        return "bg-sky-600 text-light"
-      case lowerCaseText.includes("python"):
-        return "bg-indigo-600 text-light"
-      case lowerCaseText.includes("php"):
-        return "bg-purple-600 text-light"
-      case lowerCaseText.includes("c++"):
-        return "bg-pink-600 text-light"
-      default:
-        // Default styling for other tags
-        return "bg-blue-100 text-blue-800"
+    for (const tag of lowerCaseTags) {
+      switch (tag) {
+        case "html":
+          return "bg-blue-600 text-light"
+        case "css":
+          return "bg-purple-600 text-light"
+        case "javascript":
+          return "bg-sky-600 text-light"
+        case "python":
+          return "bg-indigo-600 text-light"
+        case "php":
+          return "bg-purple-600 text-light"
+        case "c++":
+          return "bg-pink-600 text-light"
+        default:
+          // Default styling for other tags
+          return "bg-blue-100 text-blue-800"
+      }
     }
   }
 
