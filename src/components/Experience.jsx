@@ -45,16 +45,6 @@ const Experience = () => {
             }
           />
           <Details
-            position={"Student Assistant"}
-            company={"Gulf Coast State College"}
-            companyLink={"www.gcsc.com"}
-            time={"2021-2022"}
-            address={"Panama City, Fl"}
-            work={
-              "I worked as a student assistant for the Digital Media and Design program. During my timeframe, I participated in helping the program with areas such as graphic design, web development, radio broadcasting, video production (editing and camera work)."
-            }
-          />
-          <Details
             position={"Web Developer Intern"}
             company={"Kerigan Marketing Associates"}
             companyLink={"https://keriganmarketing.com/"}
@@ -62,6 +52,16 @@ const Experience = () => {
             address={"Mexico Beach, Fl"}
             work={
               "As the web intern at Kerigan Marketing Associates for the allotted three months, I dealt with front and back end work. I helped keep websites up to date and made sure everything was functional and up to code with today's standards."
+            }
+          />
+          <Details
+            position={"Student Assistant"}
+            company={"Gulf Coast State College"}
+            companyLink={"https://centerforstudentmedia.com/"}
+            time={"2021-2022"}
+            address={"Panama City, Fl"}
+            work={
+              "I worked as a student assistant for the Digital Media and Design program. During my timeframe, I participated in helping the program with areas such as graphic design, web development, radio broadcasting, video production (editing and camera work)."
             }
           />
         </ul>
