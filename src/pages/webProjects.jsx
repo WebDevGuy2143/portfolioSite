@@ -185,8 +185,8 @@ const webProjects = () => {
             className="inline-block text-dark dark:text-light font-bold w-full capitalize mb-16 md:mb-6 md:!text-3xl !text-6xl !leading-tight lg:!text-6xl sm:!mb-8 sm:!text-3xl xs:!mb-5 xs:!text-4xl xl:text-6xl"
           />
 
-          <div className="w-full grid grid-cols-12 center gap-24 gap-y-32 xl:gap-x-16 lg:w-full lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            <div className="col-span-12 md:col-span-9">
+          <div className="w-full grid grid-cols-12 center gap-24 xs:gap-0 gap-y-32 xl:gap-x-16 lg:w-full lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12 sx:col-span-12 md:gap-0">
               <FeaturedProject
                 title="Boilerplate Featured project"
                 img={project1}
@@ -197,7 +197,7 @@ const webProjects = () => {
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6 md:col-span-9">
+            <div className="col-span-6 xs:col-span-12 xs:gap-0">
               <Project
                 title="Boilerplate Project"
                 img={project1}
@@ -208,7 +208,7 @@ const webProjects = () => {
                 type="Project"
               />
             </div>
-            <div className="col-span-6 md:col-span-9">
+            <div className="col-span-6 xs:col-span-12 xs:gap-0">
               <Project
                 title="Boilerplate Project"
                 img={project1}
@@ -219,7 +219,7 @@ const webProjects = () => {
                 type="Project"
               />
             </div>
-            <div className="col-span-12 md:col-span-9">
+            <div className="col-span-12 xs:col-span-12 xs:gap-0">
               <FeaturedProject
                 title="Boilerplate Featured project"
                 img={project1}
@@ -230,7 +230,7 @@ const webProjects = () => {
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6 md:col-span-9">
+            <div className="col-span-6 xs:col-span-12 xs:gap-0">
               <Project
                 title="Boilerplate Project"
                 img={project1}
@@ -241,7 +241,7 @@ const webProjects = () => {
                 type="Project"
               />
             </div>
-            <div className="col-span-6 md:col-span-9">
+            <div className="col-span-6 xs:col-span-12 xs:gap-0">
               <Project
                 title="Boilerplate Project"
                 img={project1}
