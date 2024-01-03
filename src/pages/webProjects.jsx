@@ -16,7 +16,6 @@ const Tags = ({ text }) => {
   const tags = Array.isArray(text) ? text : [text]
 
   // Function to get the dynamic class based on the tag
-  // Function to get the dynamic class based on the tag
   const getTagClass = () => {
     const lowerCaseTags = tags.map((tag) => tag.toLowerCase())
 
@@ -35,7 +34,6 @@ const Tags = ({ text }) => {
         case "c++":
           return "bg-pink-600 text-light"
         default:
-          // Default styling for other tags
           return "bg-blue-100 text-blue-800"
       }
     }

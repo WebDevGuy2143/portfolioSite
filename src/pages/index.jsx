@@ -36,7 +36,7 @@ export default function Home() {
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full">
               <AnimatedText
                 text="Hello there! I'm Gene, your personal Digital Media Specialist"
-                className="mb-12 !text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl md:pt-0 sm:!text-3xl"
+                className="mb-5 !text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl md:pt-0 sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                 From the very beginning, my journey in the realm of technology
@@ -45,7 +45,7 @@ export default function Home() {
                 &quot;deep-seated&quot; passion for programming, graphic design,
                 video production, and radio.
               </p>
-              <p className="my-4 text-base font-medium">
+              <p className="my-4 text-base font-medium mb-16">
                 Today, I bring together my diverse expertise to create
                 captivating digital experiences that seamlessly integrate the
                 worlds of web development, programming, graphic design, video
@@ -64,7 +64,7 @@ export default function Home() {
                 </Link>
                 <Link
                   href="mailto:genehowell9@gmail.com"
-                  className="contactAnimate ml-4 text-lg font-medium capitalize text-slate-900 underline hover:underline-offset-2 hover:ease-out dark:text-light mt-1 md:text-base"
+                  className="contactAnimate ml-4 text-lg font-medium capitalize text-slate-900 underline hover:underline-offset-4 hover:animate-bounce hover:ease-out dark:text-light mt-1 md:text-base"
                 >
                   Contact Me
                 </Link>
