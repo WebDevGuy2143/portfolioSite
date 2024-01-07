@@ -38,10 +38,40 @@ const Experience = () => {
             position={"Full-stack Web Developer"}
             company={"Howell Creative"}
             companyLink={"http://www.genehowell.com"}
-            time={"2010-Present"}
+            time={"2009-Present"}
             address={"Panama City, Fl"}
             work={
               "I help provide a clean, yet functional online presense for local businesses in showcasing the best way in what they have to offer towards their target audience."
+            }
+          />
+          <Details
+            position={"Full-stack Web Developer"}
+            company={"Tahirih Pellegrino"}
+            companyLink={"#"}
+            time={"2009-2010"}
+            address={"Marietta, Ga"}
+            work={
+              "I built a custom membership website for Tahirih which involved numerous meetings. This site was built to promote her self published book. I am extremely grateful for the opportunity with working on this project as a first project in my web dev career."
+            }
+          />
+          <Details
+            position={"Full-stack Web Developer"}
+            company={"Muscle Nerdz"}
+            companyLink={"#"}
+            time={"2016-2017"}
+            address={"Panama City, Fl"}
+            work={
+              "This website was built using the WordPress platform, with a predetermined theme I had modified for them. I would frequently update their site with daily, to weekly content."
+            }
+          />
+          <Details
+            position={"Full-stack Web Developer"}
+            company={"Stephanie Pettis and RIO"}
+            companyLink={"http://www.stephaniepettisandrio.com/"}
+            time={"2016-Present"}
+            address={"Panama City, Fl"}
+            work={
+              "I built Stephane's website for her band, in which my father is a part of. This took numerous scheduled meetings to have the stamp of approval from Stephanie. This was a fun project to work on as well."
             }
           />
           <Details
