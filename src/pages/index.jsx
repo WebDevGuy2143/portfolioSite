@@ -25,10 +25,10 @@ export default function Home() {
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 relative">
-              <div className="absolute top-32 left-52 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-              <div className="absolute top-20 left-5 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-              <div className="absolute -bottom-8 left-40 w-72 h-72 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-              <div className="absolute -bottom-5 left-15 w-72 h-72 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-5000"></div>
+              <div className="absolute top-32 left-52 w-72 h-72 dark:bg-violet-950 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+              <div className="absolute top-20 left-5 w-72 h-72 dark:bg-teal-950 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+              <div className="absolute -bottom-8 left-40 w-72 h-72 dark:bg-teal-950 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+              <div className="absolute -bottom-5 left-15 w-72 h-72 dark:bg-violet-950 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-5000"></div>
 
               <Image
                 src={profilePic}
