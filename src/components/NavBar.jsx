@@ -18,9 +18,8 @@ const CustomLink = ({ href, title, className = "" }) => {
     <Link href={href} className={`${className} relative group`}>
       {title}
       <span
-        className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 text-dark ${
-          router.asPath === href ? "w-full" : "w-0"
-        } dark:bg-light`}
+        className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 text-dark ${router.asPath === href ? "w-full" : "w-0"
+          } dark:bg-light`}
       >
         &nbsp;
       </span>
@@ -44,9 +43,8 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
     >
       {title}
       <span
-        className={`h-[1px] inline-block bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 text-slate-900 ${
-          router.asPath === href ? "w-full" : "w-0"
-        } dark:bg-dark`}
+        className={`h-[1px] inline-block bg-light absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 text-slate-900 ${router.asPath === href ? "w-full" : "w-0"
+          } dark:bg-dark`}
       >
         &nbsp;
       </span>
@@ -69,19 +67,16 @@ const NavBar = () => {
         onClick={handleClick}
       >
         <span
-          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
-            isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
-          }`}
+          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+            }`}
         ></span>
         <span
-          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
-            isOpen ? "opacity-0" : "opacity-100"
-          }`}
+          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? "opacity-0" : "opacity-100"
+            }`}
         ></span>
         <span
-          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
-            isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
-          }`}
+          className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+            }`}
         ></span>
       </button>
 
@@ -104,7 +99,7 @@ const NavBar = () => {
           />
           <CustomLink
             href="/articles"
-            title="Articles"
+            title="My Articles"
             className="ml-4 text-slate-900 dark:text-light"
           />
         </nav>
@@ -141,9 +136,8 @@ const NavBar = () => {
 
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            className={`ml-3 flex items-center justify-center rounded-full p-1 ${
-              mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-            }`}
+            className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+              }`}
           >
             {mode === "dark" ? (
               <SunIcon className={"fill-dark"} />
@@ -177,7 +171,7 @@ const NavBar = () => {
             />
             <CustomMobileLink
               href="/articles"
-              title="Articles"
+              title="My Articles"
               className="text-dark dark:text-dark"
               toggle={handleClick}
             />
@@ -215,9 +209,8 @@ const NavBar = () => {
 
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
-              className={`ml-3 flex items-center justify-center rounded-full p-1 ${
-                mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-              }`}
+              className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+                }`}
             >
               {mode === "dark" ? (
                 <SunIcon className={"fill-dark"} />
