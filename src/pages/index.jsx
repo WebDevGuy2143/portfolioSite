@@ -25,10 +25,14 @@ export default function Home() {
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 relative">
-              <div className="absolute top-32 left-52 w-72 h-72 dark:bg-violet-950 3xl:top-[150px] 3xl:left-[350px] 3xl:w-[350px] 3xl:h-[350px] 3xl:blur-3xl bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-              <div className="absolute top-20 left-5 w-72 h-72 3xl:top-[100px] 3xl:left-[100px] 3xl:w-[350px] 3xl:h-[350px] 3xl:blur-3xl dark:bg-teal-950 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-              <div className="absolute -bottom-8 left-40 3xl:left-[250px] w-72 h-72 3xl:w-[350px] 3xl:h-[350px] 3xl:blur-3xl dark:bg-teal-950 bg-orange-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-              <div className="absolute -bottom-5 left-15 w-72 h-72 3xl:w-[350px] 3xl:h-[350px] 3xl:blur-3xl dark:bg-violet-950 bg-green-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-5000"></div>
+
+              <div className="absolute lg:hidden xl:!top-[15px] xl:!left-[0px] xl:!w-[200px] xl:!h-[200px] xl:!blur-2xl 2xl:!top-[150px] 2xl:!left-[20px] 2xl!:w-[220px] 2xl:!h-[220px] 2xl:blur-2xl 3xl:top-[100px] 3xl:left-[100px] 3xl:w-[300px] 3xl:h-[300px] 3xl:blur-3xl dark:bg-teal-950 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+
+              <div className="absolute lg:hidden dark:bg-violet-950 xl:!top-[120px] xl:!left-[80px] xl:!w-[200px] xl:!h-[200px] xl:!blur2xl  2xl:!top-[140px] 2xl:!left-[200px] 2xl:w-[250px] 2xl:h-[250px] 2xl:blur-2xl 3xl:top-[150px] 3xl:left-[350px] 3xl:w-[300px] 3xl:h-[300px] 3xl:blur-3xl bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+
+              <div className="absolute lg:hidden xl:!top-[300px] xl:!left-[0px] xl:!w-[200px] xl:!h-[200px] 2xl:!left-[50px] 2xl:!w-[250px] 2xl:!h-[250px] 2xl:!blur-2xl 3xl:top-[400px] 3xl:w-[350px] 3xl:h-[350px] 3xl:blur-3xl dark:bg-violet-950 bg-green-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-5000"></div>
+
+              <div className="absolute lg:hidden xl:!top-[300px] xl:!-left-[10px] xl:!w-[200px] xl:!h-[200px] 2xl:!left-[200px] 2xl:!w-[250px] 2xl:!h-[250px] 2xl:!blur-2xl 3xl:left-[250px] 3xl:top-[400px] 3xl:w-[350px] 3xl:h-[350px] 3xl:blur-3xl dark:bg-teal-950 bg-orange-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
 
               <Image
                 src={profilePic}
