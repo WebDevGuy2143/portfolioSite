@@ -127,7 +127,7 @@ const NavBar = () => {
             <GithubIcon />
           </Link>
           <Link
-            className="hover:animate-bounce w-6 ml-3 hover:drop-shadow-3xl"
+            className="hover:animate-bounce w-6 ml-3 mr-2 hover:drop-shadow-3xl"
             href="https://twitter.com/GeneHowell3142"
             target={"_blank"}
           >
