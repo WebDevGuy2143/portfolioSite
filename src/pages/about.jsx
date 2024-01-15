@@ -31,10 +31,22 @@ const about = () => {
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light">
                 My Bio
               </h2>
-              <p className="font-medium">
-                This is where my story of becoming a web specialist and Digital
-                Media Specialist will unfold
+              <p className="font-medium pb-3">
+                I knew I always had a passion for technology. Little did I know it would be in the web development field. Ever since 2009, I had started my journey with college at Chattahoochee Technical collage in Marietta, Ga as a freelance web developer. Ever since then I've transferred to Gulf Coast State College in Panama City, Florida where I've gained a lot more experience in how websites are made, the theory behind how browsers retrieve all the ins-and-outs of a website, as well as the fast paced advancements of how websites are created today in the development phase.
               </p>
+              <p className="font-medium pb-3">
+                Along with my Digital Media associates degree that I will obtain at the end of this year, I've picked up some other useful skills that have made me a well rounded person in the IT industry. Those skills consist of Graphic Design, Programming, Videography, Audio engineering, and much more.
+              </p>
+              <p className="font-medium pb-3">
+                With that all being said, my coding specialties involve, HTML, CSS, JavaScript, PHP (w/WordPress), Python and C++. With those coding specialties, I also have knowledge in frameworks, such as React, Laravel, and Bootstrap. I also have knowledge with environments such as NodeJS, Composer, and Yarn.
+              </p>
+              <p className="font-medium pb-3">
+                As with many in this industry, it is never stagnant. So I am forever learning and implementing the new skillsets that I learn along the way with creating "up to code", websites that meet todays standards.
+              </p>
+              <p className="font-medium">
+                Get in touch via email at: genehowellwebguy@gmail.com or phone: 404-310-4661
+              </p>
+
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:!order-1 md:!col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-light" />
