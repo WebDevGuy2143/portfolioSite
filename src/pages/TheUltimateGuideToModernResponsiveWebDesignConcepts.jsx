@@ -6,6 +6,7 @@ import profilePic from "../../public/images/profile/profilePic4.png"
 import Layout from "@/components/Layout"
 import TransitionEffect from "@/components/TransitionEffect"
 import ArticleImg1 from "../../public/images/articles/Article1Img.png"
+import Link from "next/link"
 
 export default function TheUltimateGuideToModernResponsiveWebDesignConcepts() {
     return (
@@ -103,20 +104,25 @@ export default function TheUltimateGuideToModernResponsiveWebDesignConcepts() {
                                 <p className="text-xl pb-5">And hey, don't forget to sprinkle in some on-page SEO magic with cool things like keyword research, title tags, and meta descriptions to make sure your website stands out in search engine results! Let's be honest with ourselves. That is for another article!</p>
                                 <p className="text-xl pb-5">Now go forth, web design wizards, and create the most responsive and awesomely creative websites ever!</p>
                                 <p className="text-xl pb-5">Happy coding!</p>
-                                <div className="flex">
-                                    <div className="m-1 text-xl text-blue-500 dark:hover:text-light hover:cursor-pointer">#responsivewebdesign</div>
-                                    <div className="m-1 text-xl text-blue-500 dark:hover:text-light hover:cursor-pointer">#webdesign</div>
-                                    <div className="m-1 text-xl text-blue-500 dark:hover:text-light hover:cursor-pointer">#moderndesign</div>
+                                <div className="flex gap-3">
+                                    <div className="text-xl text-blue-500 dark:hover:text-light hover:cursor-pointer">#responsivewebdesign</div>
+                                    <div className="text-xl text-blue-500 dark:hover:text-light hover:cursor-pointer">#webdesign</div>
+                                    <div className="text-xl text-blue-500 dark:hover:text-light hover:cursor-pointer">#moderndesign</div>
+                                </div>
+                                <hr class="h-px my-8 bg-gray-500 border-0 dark:bg-light" />
+                                <div className="mt-8 text-left text-gray-500 dark:text-light">
+                                    <p className="text-sm">Article by <Link href="http://www.genehowell.com/" className="hover:underline hover:underline-offset-2 text-slate-800 dark:text-light">Gene Howell</Link></p>
+                                    <p className="text-sm">Published on February 24th, 2023</p>
                                 </div>
                                 {/* Author Card */}
 
-                                <div className="m-8 flex items-center justify-center">
-                                    <div className="items-center w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <div className="m-8 flex items-center justify-center ">
+                                    <div className="border border-gray-500 dark:border items-center w-full max-w-sm bg-white rounded-lg shadow dark:bg-gray-800 dark:border-light">
                                         <div className="flex justify-end px-4 pt-4">
                                         </div>
                                         <div className="flex flex-col items-center pb-10">
-                                            <Image className="w-24 h-24 mb-3 rounded-full shadow-lg" src={profilePic} alt="Gene Howell" />
-                                            <h5 class="mb-1 text-xl font-bold text-gray-900 dark:text-white">About the Author</h5>
+                                            <Image className="w-24 h-24 mb-3 rounded-full border border-gray-500 dark:border dark:border-stone-500" src={profilePic} alt="Gene Howell" />
+                                            <h5 class="mb-1 text-xl font-bold text-gray-900 dark:text-gray-500">About the Author</h5>
                                             <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Gene Howell</h5>
                                             <span className="pb-2 text-sm text-gray-500 dark:text-gray-400">Digital Media Specialist</span>
                                             <span className="text-lg pr-10 pl-10 text-gray-500 text-justify dark:text-gray-400">I am an Atlanta, GA native, now based in Panama City, FL, since 2016. I am also passionate about all things digital media, music, writing, and computers. Ultimately, I plan to teach after completing my Bachelor's and Master's degrees. Outside of my interests and studies, you'll find me at home, at the gym, or out enjoying life with family and friends.</span>
