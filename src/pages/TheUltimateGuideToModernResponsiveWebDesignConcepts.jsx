@@ -34,20 +34,20 @@ export default function TheUltimateGuideToModernResponsiveWebDesignConcepts() {
 
                             <h1 className="text-center mt-16 mb-16 text-5xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">The Ultimate Guide to Modern Responsive Web Design Concepts</h1>
                             <div className="text-left ">
-                                <p className="text-xl pb-5">Hey there! So, let's talk about something exciting today!</p>
-                                <p className="text-xl pb-5">Let's talk about responsive web design!</p>
-                                <p className="text-xl pb-5">Responsive web design has become a crucial part of modern web development. In an age where users are accessing the internet through a multitude of devices, responsive design ensures that websites adapt to the screen size and resolution of the device they're viewed on. This results in a seamless browsing experience for users, regardless of the device they're using. In this article, we'll cover the key concepts behind modern responsive web design and best practices for on-page SEO (Search Engine Optimization).</p>
-                                <p className="text-xl pb-5">Okay, that’s a bit technical, but what does "responsive web design" ACTUALLY mean?</p>
+                                <p className="text-xl pb-5"><div className="text-xl pb-5 font-bold italic">Hey there!</div> So, let's talk about something exciting today!</p>
+                                <p className="text-xl pb-5">Let's talk about <div className="inline font-bold text-xl pb-5 italic">responsive web design!</div></p>
+                                <p className="text-xl pb-5">Responsive web design has become a <div className="text-xl inline font-bold italic">crucial</div> part of modern web development. In an age where users are accessing the internet through a multitude of devices, responsive design ensures that websites adapt to the <div className="text-xl inline font-bold italic">screen size</div> and resolution of the device they're viewed on. This results in a seamless browsing experience for users, regardless of the device they're using. In <div className="text-xl inline font-bold italic">this</div> article, we&#39;ll cover the key concepts behind <div className="text-xl inline font-bold italic">modern responsive web design</div> and <div className="text-xl inline font-bold italic">best practices</div> for on-page <div className="text-xl inline font-bold italic">SEO (Search Engine Optimization)</div>.</p>
+                                <p className="text-xl pb-5">Okay, that's a bit technical, but what does "responsive web design" ACTUALLY mean?</p>
 
                                 <h2 className="mt-7 mb-7 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">What is Responsive Web Design?</h2>
                                 <p className="text-xl pb-5">Responsive web design is a fancy approach to web development that makes sure a website's layout and design automatically adjusts to whatever device you're using to view it.</p>
                                 <p className="text-xl pb-5">That means whether you're browsing on your phone, tablet, laptop, or desktop computer, the website will look amazing and be super easy to use.</p>
                                 <p className="text-xl pb-5">And get this—with responsive design, developers don't have to create separate websites for each device type.</p>
                                 <p className="text-xl pb-5">So, say goodbye to those days of having to awkwardly zoom in and out just to read the text on a mobile site. With responsive design, everything fits perfectly on your screen no matter what size it is! Pretty neat, huh?</p>
-                                <p className="text-xl pb-5">Well, what about layouts and media queries? Aren’t those key elements for responsive design? If you said "yes," then you'd be correct!</p>
+                                <p className="text-xl pb-5">Well, what about layouts and media queries? Aren&#39;t those key elements for responsive design? If you said "yes," then you'd be correct!</p>
                                 <h2 className="mt-7 mb-7 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Layouts, Media Queries, and Elements</h2>
                                 <p className="text-xl pb-5">Alrighty, let's spruce up this web development talk a bit!</p>
-                                <p className="text-xl pb-5">When it comes to making a website look great on all sorts of devices, developers have got their work cut out for them! They’ve got to make sure everything looks good and works smoothly no matter if someone's viewing it on a tiny phone or a giant desktop computer.</p>
+                                <p className="text-xl pb-5">When it comes to making a website look great on all sorts of devices, developers have got their work cut out for them! They&#39;ve got to make sure everything looks good and works smoothly no matter if someone's viewing it on a tiny phone or a giant desktop computer.</p>
                                 <p className="text-xl pb-5">To do this, developers:</p>
                                 <ul className="pl-10 pb-5 list-disc">
                                     <li>use all sorts of cool tricks like adjusting font sizes, margins, and padding. </li>
@@ -61,13 +61,13 @@ export default function TheUltimateGuideToModernResponsiveWebDesignConcepts() {
                                 <h2 className="mt-7 mb-7 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">SVG is the way to go!</h2>
 
                                 <p className="text-xl pb-5">SVG's are called Scalable Vector Graphic files. These babies make sure that pictures and graphics stay sharp and pretty no matter how big or small they get. Plus, SVGs are super flexible and can even be changed on the fly using code! To top it all off, using SVGs doesn't slow down your website's performance, so everyone's happy!</p>
-                                <p className="text-xl pb-5">But it doesn’t stop there! There are new approaches on how to start this process.</p>
+                                <p className="text-xl pb-5">But it doesn&#39;t stop there! There are new approaches on how to start this process.</p>
                                 <h2 className="mt-7 mb-7 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Mobile-First vs. Desktop-First Design Approaches</h2>
                                 <p className="text-xl pb-5">Now if you want to talk about mobile-first design, it seems to be all the rage these days! The idea is that you design your website with mobile devices in mind first, and then scale up to larger devices. It's like starting with the little guy first, and then giving him a growth spurt to become the big guy.</p>
                                 <p className="text-xl">Some people still go with the good ol' desktop-first approach. They start with larger displays and then work their way down to smaller screens.</p>
                                 <p className="text-xl pb-5">After all, if you've got a fancy website with lots of bells and whistles, you might need all that extra real estate!</p>
                                 <p className="text-xl pb-5">At the end of the day, though, the most important thing is to make sure your website is responsive. That means it looks great no matter what size or device it's being viewed on. So don't forget to keep those design principles in mind and make sure your website is always looking its best!</p>
-                                <p className="text-xl pb-5">But wait! There’s more!</p>
+                                <p className="text-xl pb-5">But wait! There&#39;s more!</p>
                                 <h2 className="mt-7 mb-7 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Front-end vs. Back-end vs. Full-stack.</h2>
                                 <p className="text-xl pb-5">We've talked about scaling for mobile and desktop, and visa versa, lets talk about front-end, back-end and full-stack programming. It used to be that these terms were combined into just "web designer", but nowadays this role has been divided into more specific roles due to the way programming languages such as JavaScript, Python, PHP and so on, have evolved.</p>
                                 <p className="text-xl pb-5">To get more specific, alongside the famous HTML (HyperText Markup Language), there is now languages for the server side of things like Python and JavaScript, which in this case, handles concepts called "requests" to and from a server which a website lives once uploaded.</p>
@@ -99,7 +99,7 @@ export default function TheUltimateGuideToModernResponsiveWebDesignConcepts() {
                                 <h2 className="mt-7 mb-7 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Wrap it up!</h2>
                                 <p className="text-xl pb-5">Let's summarize the superhero of web development: responsive web design!</p>
                                 <p className="text-xl pb-5">It's the ultimate solution for making sure websites look awesome on any device, big or small. With fancy techniques like font size adjustments, grid systems, media queries, fluid images, and SVGs, developers can create websites that adapt to any screen size and resolution. It's like magic!</p>
-                                <p className="text-xl pb-5">Before we go, let’s remember the details!</p>
+                                <p className="text-xl pb-5">Before we go, let&#39;s remember the details!</p>
                                 <p className="text-xl pb-5">You can choose between the mobile-first approach (starting small and scaling up) or the desktop-first approach (starting big and scaling down). Whichever one you pick, just make sure your website is responsive and looks fantastic everywhere.</p>
                                 <p className="text-xl pb-5">And hey, don't forget to sprinkle in some on-page SEO magic with cool things like keyword research, title tags, and meta descriptions to make sure your website stands out in search engine results! Let's be honest with ourselves. That is for another article!</p>
                                 <p className="text-xl pb-5">Now go forth, web design wizards, and create the most responsive and awesomely creative websites ever!</p>
@@ -112,12 +112,12 @@ export default function TheUltimateGuideToModernResponsiveWebDesignConcepts() {
                                 <hr class="h-px my-8 bg-gray-500 border-0 dark:bg-light" />
                                 <div className="mt-8 text-left text-gray-500 dark:text-light">
                                     <p className="text-sm">Article by <Link href="http://www.genehowell.com/" className="hover:underline hover:underline-offset-2 text-slate-800 dark:text-light">Gene Howell</Link></p>
-                                    <p className="text-sm">Published on February 24th, 2023</p>
+                                    <p className="text-sm">Orignially published on <Link href="https://www.linkedin.com/pulse/ultimate-guide-modern-responsive-web-design-concepts-gene-howell?trk=public_post_feed-article-content" className="hover:underline hover:underline-offset-2 text-slate-800 dark:text-light" >LinkedIn</Link> - February 24th, 2023</p>
                                 </div>
                                 {/* Author Card */}
 
                                 <div className="m-8 flex items-center justify-center ">
-                                    <div className="border border-gray-500 dark:border items-center w-full max-w-sm bg-white rounded-lg shadow dark:bg-gray-800 dark:border-light">
+                                    <div className="border border-gray-500 dark:border items-center w-full max-w-xl md:max-w-sm bg-white rounded-lg shadow dark:bg-gray-800 dark:border-light">
                                         <div className="flex justify-end px-4 pt-4">
                                         </div>
                                         <div className="flex flex-col items-center pb-10">
@@ -125,7 +125,7 @@ export default function TheUltimateGuideToModernResponsiveWebDesignConcepts() {
                                             <h5 class="mb-1 text-xl font-bold text-gray-900 dark:text-gray-500">About the Author</h5>
                                             <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Gene Howell</h5>
                                             <span className="pb-2 text-sm text-gray-500 dark:text-gray-400">Digital Media Specialist</span>
-                                            <span className="text-lg pr-10 pl-10 text-gray-500 text-justify dark:text-gray-400">I am an Atlanta, GA native, now based in Panama City, FL, since 2016. I am also passionate about all things digital media, music, writing, and computers. Ultimately, I plan to teach after completing my Bachelor's and Master's degrees. Outside of my interests and studies, you'll find me at home, at the gym, or out enjoying life with family and friends.</span>
+                                            <span className="text-lg pr-10 pl-10 text-gray-500 text-justify dark:text-gray-400">I am an Atlanta, GA native, now based in Panama City, FL, since 2016. I am also passionate about all things digital media, music, writing, and computers. Ultimately, I plan to teach after completing my Bachelor&#39;s and Master&#39;s degrees. Outside of my interests and studies, you&#39;ll find me at home, at the gym, or out enjoying life with family and friends.</span>
                                             <div className="flex mt-4 md:mt-6">
 
                                             </div>
