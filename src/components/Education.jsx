@@ -40,7 +40,7 @@ const Education = () => {
             time={"2009-2015"}
             place={"Chattahoochee Technical College"}
             info={
-              "Completed college certificate level courses in Internet Specialist. These courses comprised of Web Development, Programming, and other college level General Education courses. **I moved before I could finish this certificate due to medical reasons.**"
+              "Completed college certificate level courses in Internet Specialist. These courses comprised of Web Development, Programming, and other college level General Education courses. **I moved before finishing this certificate due to medical reasons.**"
             }
           />
           <Details
