@@ -94,6 +94,16 @@ const Experience = () => {
               "I worked as a student assistant for the Digital Media and Design program. During my timeframe, I participated in helping the program with areas such as graphic design, web development, radio broadcasting, video production (editing and camera work)."
             }
           />
+          <Details
+            position={"Student Assistant"}
+            company={"Gulf Coast State College"}
+            companyLink={"https://centerforstudentmedia.com/"}
+            time={"2023-Present"}
+            address={"Panama City, Fl"}
+            work={
+              "I am currently working as a student assistant for the Digital Media and Design program. During my timeframe, I am participating in helping the program with areas such as graphic design, web development, radio broadcasting, video production (editing and camera work)."
+            }
+          />
         </ul>
       </div>
     </div>

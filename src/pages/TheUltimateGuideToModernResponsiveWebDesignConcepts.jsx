@@ -8,7 +8,8 @@ import TransitionEffect from "@/components/TransitionEffect"
 import ArticleImg1 from "../../public/images/articles/Article1Img.png"
 import Link from "next/link"
 
-export default function TheUltimateGuideToModernResponsiveWebDesignConcepts() {
+export default function theUltimateGuideToModernResponsiveWebDesignConcepts() {
+
     return (
         <>
             <Head>
@@ -28,8 +29,8 @@ export default function TheUltimateGuideToModernResponsiveWebDesignConcepts() {
                                 src={ArticleImg1}
                                 alt="Gene Howell"
                                 className="w-full h-auto relative rounded-md z-10 lg:flex-col lg:w-full md:pb-1 md:w-full lg:mb-16"
-                                priority
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                                suppressHydrationWarning
                             />
 
                             <h1 className="text-center mt-16 mb-16 text-5xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">The Ultimate Guide to Modern Responsive Web Design Concepts</h1>
@@ -105,11 +106,11 @@ export default function TheUltimateGuideToModernResponsiveWebDesignConcepts() {
                                 <p className="text-xl pb-5">Now go forth, web design wizards, and create the most responsive and awesomely creative websites ever!</p>
                                 <p className="text-xl pb-5">Happy coding!</p>
                                 <div className="flex gap-3">
-                                    <div className="text-xl dark:text-primaryDark dark:hover:text-light hover:cursor-pointer">#responsivewebdesign</div>
-                                    <div className="text-xl dark:text-primaryDark dark:hover:text-light hover:cursor-pointer">#webdesign</div>
-                                    <div className="text-xl dark:text-primaryDark dark:hover:text-light hover:cursor-pointer">#moderndesign</div>
+                                    <div className="text-xl text-blue-500 dark:hover:text-light hover:cursor-pointer">#responsivewebdesign</div>
+                                    <div className="text-xl text-blue-500 dark:hover:text-light hover:cursor-pointer">#webdesign</div>
+                                    <div className="text-xl text-blue-500 dark:hover:text-light hover:cursor-pointer">#moderndesign</div>
                                 </div>
-                                <hr class="h-px my-8 bg-gray-500 border-0 dark:bg-light" />
+                                <hr className="h-px my-8 bg-gray-500 border-0 dark:bg-light" />
                                 <div className="mt-8 text-left text-gray-500 dark:text-light">
                                     <p className="text-sm">Article by <Link href="http://www.genehowell.com/" className="hover:underline hover:underline-offset-2 text-slate-800 dark:text-light">Gene Howell</Link></p>
                                     <p className="text-sm">Orignially published on <Link href="https://www.linkedin.com/pulse/ultimate-guide-modern-responsive-web-design-concepts-gene-howell?trk=public_post_feed-article-content" className="hover:underline hover:underline-offset-2 text-slate-800 dark:text-light" >LinkedIn</Link> - February 24th, 2023</p>
@@ -117,15 +118,15 @@ export default function TheUltimateGuideToModernResponsiveWebDesignConcepts() {
                                 {/* Author Card */}
 
                                 <div className="m-8 flex items-center justify-center ">
-                                    <div className="border-2 border-gray-500 dark:border-2 items-center w-full max-w-xl md:max-w-sm bg-light rounded-lg shadow dark:bg-dark dark:border-primaryDark dark:shadow-primaryDark dark:shadow-md">
-                                        <div className="flex justify-end px-4 pt-10">
+                                    <div className="border border-gray-500 dark:border items-center w-full max-w-xl md:max-w-sm bg-white rounded-lg shadow dark:bg-gray-800 dark:border-light">
+                                        <div className="flex justify-end px-4 pt-4">
                                         </div>
                                         <div className="flex flex-col items-center pb-10">
-                                            <Image className="w-24 h-24 mb-3 rounded-full border border-gray-500 dark:border dark:border-primaryDark " src={profilePic} alt="Gene Howell" />
-                                            <h5 class="mb-1 text-xl font-bold text-gray-900 dark:text-light/50">About the Author</h5>
-                                            <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Gene Howell</h5>
-                                            <span className="pb-2 text-sm text-gray-500 dark:text-light/60">Digital Media Specialist</span>
-                                            <span className="text-lg pr-10 pl-10 text-gray-500 text-justify dark:text-light">I am an Atlanta, GA native, now based in Panama City, FL, since 2016. I am also passionate about all things digital media, music, writing, and computers. Ultimately, I plan to teach after completing my Bachelor&#39;s and Master&#39;s degrees. Outside of my interests and studies, you&#39;ll find me at home, at the gym, or out enjoying life with family and friends.</span>
+                                            <Image className="w-24 h-24 mb-3 rounded-full border border-gray-500 dark:border dark:border-stone-500" src={profilePic} alt="Gene Howell" suppressHydrationWarning />
+                                            <h5 className="mb-1 text-xl font-bold text-gray-900 dark:text-gray-500">About the Author</h5>
+                                            <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Gene Howell</h5>
+                                            <span className="pb-2 text-sm text-gray-500 dark:text-gray-400">Digital Media Specialist</span>
+                                            <span className="text-lg pr-10 pl-10 text-gray-500 text-justify dark:text-gray-400">I am an Atlanta, GA native, now based in Panama City, FL, since 2016. I am also passionate about all things digital media, music, writing, and computers. Ultimately, I plan to teach after completing my Bachelor&#39;s and Master&#39;s degrees. Outside of my interests and studies, you&#39;ll find me at home, at the gym, or out enjoying life with family and friends.</span>
                                             <div className="flex mt-4 md:mt-6">
 
                                             </div>
