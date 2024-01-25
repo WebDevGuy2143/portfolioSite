@@ -8,7 +8,7 @@ import TransitionEffect from "@/components/TransitionEffect"
 import ArticleImg1 from "../../public/images/articles/Article1Img.png"
 import Link from "next/link"
 
-export default function theUltimateGuideToModernResponsiveWebDesignConcepts() {
+export default function TheUltimateGuideToModernResponsiveWebDesignConcepts() {
 
     return (
         <>
@@ -35,9 +35,9 @@ export default function theUltimateGuideToModernResponsiveWebDesignConcepts() {
 
                             <h1 className="text-center mt-16 mb-16 text-5xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">The Ultimate Guide to Modern Responsive Web Design Concepts</h1>
                             <div className="text-left ">
-                                <p className="text-xl pb-5"><div className="text-xl pb-5 font-bold italic">Hey there!</div> So, let's talk about something exciting today!</p>
-                                <p className="text-xl pb-5">Let's talk about <div className="inline font-bold text-xl pb-5 italic">responsive web design!</div></p>
-                                <p className="text-xl pb-5">Responsive web design has become a <div className="text-xl inline font-bold italic">crucial</div> part of modern web development. In an age where users are accessing the internet through a multitude of devices, responsive design ensures that websites adapt to the <div className="text-xl inline font-bold italic">screen size</div> and resolution of the device they're viewed on. This results in a seamless browsing experience for users, regardless of the device they're using. In <div className="text-xl inline font-bold italic">this</div> article, we&#39;ll cover the key concepts behind <div className="text-xl inline font-bold italic">modern responsive web design</div> and <div className="text-xl inline font-bold italic">best practices</div> for on-page <div className="text-xl inline font-bold italic">SEO (Search Engine Optimization)</div>.</p>
+                                <p className="text-xl pb-5"><span className="text-xl pb-5 font-bold italic">Hey there!</span> So, let's talk about something exciting today!</p>
+                                <p className="text-xl pb-5">Let's talk about <span className="inline font-bold text-xl pb-5 italic">responsive web design!</span></p>
+                                <p className="text-xl pb-5">Responsive web design has become a <span className="text-xl inline font-bold italic">crucial</span> part of modern web development. In an age where users are accessing the internet through a multitude of devices, responsive design ensures that websites adapt to the <span className="text-xl inline font-bold italic">screen size</span> and resolution of the device they're viewed on. This results in a seamless browsing experience for users, regardless of the device they're using. In <span className="text-xl inline font-bold italic">this</span> article, we&#39;ll cover the key concepts behind <span className="text-xl inline font-bold italic">modern responsive web design</span> and <span className="text-xl inline font-bold italic">best practices</span> for on-page <span className="text-xl inline font-bold italic">SEO (Search Engine Optimization)</span>.</p>
                                 <p className="text-xl pb-5">Okay, that's a bit technical, but what does "responsive web design" ACTUALLY mean?</p>
 
                                 <h2 className="mt-7 mb-7 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">What is Responsive Web Design?</h2>

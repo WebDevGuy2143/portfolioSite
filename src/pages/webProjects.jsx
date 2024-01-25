@@ -9,7 +9,7 @@ import project1 from "../../public/images/projects/WebProjects/project1.png"
 import project2 from "../../public/images/projects/WebProjects/project2.png"
 import project3 from "../../public/images/projects/WebProjects/project3.png"
 import project4 from "../../public/images/projects/WebProjects/project4.png"
-import project5 from "../../public/images/projects/WebProjects/project5.png"
+import project5 from "../../public/images/projects/WebProjects/project5.jpg"
 import TransitionEffect from "@/components/TransitionEffect"
 
 const Tags = ({ text }) => {
@@ -98,7 +98,7 @@ const FeaturedProject = ({ type, title, tags, summary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark  sm:px-4 sm:text-base "
+            className="hover:scale-110 transition-all ml-4 rounded-lg bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark  sm:px-4 sm:text-base "
           >
             View My Project
           </Link>
@@ -193,8 +193,8 @@ const webProjects = () => {
                 img={project5}
                 tags={["HTML", "CSS", "JavaScript", "PHP"]}
                 summary="Web dev project boilerplate descriptions highlight key technologies like front-end frameworks (e.g., React), back-end tools (Node.js, Django), version control (Git), package managers (npm, yarn), styling preprocessors (Sass, Less), and deployment platforms (Heroku, AWS). Essentially, it sets the groundwork for project success."
-                link="https://webdevguy2143.github.io/Natours/"
-                github="https://github.com/WebDevGuy2143/Natours"
+                link="/"
+                github="/"
                 type="Featured Project"
               />
             </div>

@@ -78,7 +78,7 @@ const articles = () => {
               Let's talk about responsive web design! 
               Responsive web design has become a crucial part of modern web development. In an age where users are accessing the internet through a multitude of devices, responsive design ensures that websites adapt to the screen size and resolution of the device they're viewed on. This results in a seamless browsing experience for users, regardless of the device they're using. In this article, we'll cover the key concepts behind modern responsive web design and best practices for on-page SEO (Search Engine Optimization)."
               time="11 min read"
-              link="/theUltimateGuideToModernResponsiveWebDesignConcepts"
+              link="/TheUltimateGuideToModernResponsiveWebDesignConcepts"
               img={ArticleImg1}
             />
             <FeaturedArticle
@@ -96,7 +96,7 @@ const articles = () => {
             <Article
               title="The Ultimate Guide To Modern Responsive WebDesign Concepts"
               date="February 24th, 2023"
-              link="/theUltimateGuideToModernResponsiveWebDesignConcepts"
+              link="/TheUltimateGuideToModernResponsiveWebDesignConcepts"
               img={ArticleImg1}
             />
             <Article
