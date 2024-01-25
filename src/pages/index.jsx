@@ -23,16 +23,16 @@ export default function Home() {
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light md:pt-4 ">
         <Layout className="pt-0">
-          <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 relative">
+          <div className="flex items-center justify-between w-full lg:flex-col ">
+            <div className="w-1/2 relative dark:z-10">
 
-              <div className="absolute lg:hidden xl:!top-[15px] xl:!left-[0px] xl:!w-[200px] xl:!h-[200px] xl:!blur-2xl 2xl:!top-[150px] 2xl:!left-[20px] 2xl!:w-[220px] 2xl:!h-[220px] 2xl:blur-2xl 3xl:top-[100px] 3xl:left-[100px] 3xl:w-[300px] 3xl:h-[300px] 3xl:blur-3xl bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000 dark:opacity-100 dark:bg-[#44BCFF] dark:z-50"></div>
+              <div className="absolute lg:hidden xl:!top-[15px] xl:!left-[0px] xl:!w-[200px] xl:!h-[200px] xl:!blur-2xl 2xl:!top-[150px] 2xl:!left-[20px] 2xl!:w-[220px] 2xl:!h-[220px] 2xl:blur-2xl 3xl:top-[100px] 3xl:left-[100px] 3xl:w-[300px] 3xl:h-[300px] 3xl:blur-3xl bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000 dark:opacity-50 dark:bg-[#44BCFF] dark:z-50"></div>
 
-              <div className="absolute lg:hidden dark:bg-[#b144ff] xl:!top-[120px] xl:!left-[80px] xl:!w-[200px] xl:!h-[200px] xl:!blur2xl  2xl:!top-[140px] 2xl:!left-[200px] 2xl:w-[250px] 2xl:h-[250px] 2xl:blur-2xl 3xl:top-[150px] 3xl:left-[350px] 3xl:w-[300px] 3xl:h-[300px] 3xl:blur-3xl bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob dark:opacity-100 dark:z-50"></div>
+              <div className="absolute lg:hidden dark:bg-[#b144ff] xl:!top-[120px] xl:!left-[80px] xl:!w-[200px] xl:!h-[200px] xl:!blur2xl  2xl:!top-[140px] 2xl:!left-[200px] 2xl:w-[250px] 2xl:h-[250px] 2xl:blur-2xl 3xl:top-[150px] 3xl:left-[350px] 3xl:w-[300px] 3xl:h-[300px] 3xl:blur-3xl bg-purple-400 rounded-full mix-blend-multiply filter blur-xl dark:opacity-50 animate-blob dark:z-50"></div>
 
-              <div className="absolute lg:hidden xl:!top-[300px] xl:!left-[0px] xl:!w-[200px] xl:!h-[200px] 2xl:!left-[50px] 2xl:!w-[250px] 2xl:!h-[250px] 2xl:!blur-2xl 3xl:top-[400px] 3xl:w-[350px] 3xl:h-[350px] 3xl:blur-3xl dark:bg-[#77f159] bg-green-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-5000 dark:opacity-100 dark:z-50"></div>
+              <div className="absolute lg:hidden xl:!top-[300px] xl:!left-[0px] xl:!w-[200px] xl:!h-[200px] 2xl:!left-[50px] 2xl:!w-[250px] 2xl:!h-[250px] 2xl:!blur-2xl 3xl:top-[400px] 3xl:w-[350px] 3xl:h-[350px] 3xl:blur-3xl dark:bg-[#77f159] bg-green-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-5000 dark:opacity-50 dark:z-50"></div>
 
-              <div className="absolute lg:hidden xl:!top-[300px] xl:!-left-[10px] xl:!w-[200px] xl:!h-[200px] 2xl:!left-[200px] 2xl:!w-[250px] 2xl:!h-[250px] 2xl:!blur-2xl 3xl:left-[250px] 3xl:top-[400px] 3xl:w-[350px] 3xl:h-[350px] 3xl:blur-3xl bg-orange-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000  dark:bg-#ee590e dark:opacity-100 dark:z-50"></div>
+              <div className="absolute lg:hidden xl:!top-[300px] xl:!-left-[10px] xl:!w-[200px] xl:!h-[200px] 2xl:!left-[200px] 2xl:!w-[250px] 2xl:!h-[250px] 2xl:!blur-2xl 3xl:left-[250px] 3xl:top-[400px] 3xl:w-[350px] 3xl:h-[350px] 3xl:blur-3xl bg-orange-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000  dark:bg-#ee590e dark:opacity-50 dark:z-50"></div>
 
               <Image
                 src={profilePic}
