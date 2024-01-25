@@ -13,28 +13,6 @@ module.exports = {
       fontFamily: {
         nunito: [`var(--font-nunito)`, ...fontFamily.sans],
       },
-      screens: {
-        "3xl": { max: "3000px" },
-        // => @media (max-width: 3000px) { ... }
-
-        "2xl": { max: "1535px" },
-        // => @media (max-width: 1535px) { ... }
-
-        xl: { max: "1279px" },
-        // => @media (max-width: 1279px) { ... }
-
-        lg: { max: "1023px" },
-        // => @media (max-width: 1023px) { ... }
-
-        md: { max: "767px" },
-        // => @media (max-width: 767px) { ... }
-
-        sm: { max: "639px" },
-        // => @media (max-width: 639px) { ... }
-
-        xs: { max: "479px" },
-        // => @media (max-width: 479px) { ... }
-      },
       colors: {
         dark: "#303030",
         light: "rgb(255 251 235)",
@@ -83,6 +61,28 @@ module.exports = {
         circularLight:
           "repeating-radial-gradient(rgba(0,0,0,0.4) 2px, rgb(255 251 235) 5px, rgb(255 251 235) 100px);",
       },
+    },
+    screens: {
+      "3xl": { max: "3000px" },
+      // => @media (max-width: 3000px) { ... }
+
+      "2xl": { max: "1535px" },
+      // => @media (max-width: 1535px) { ... }
+
+      xl: { max: "1279px" },
+      // => @media (max-width: 1279px) { ... }
+
+      lg: { max: "1023px" },
+      // => @media (max-width: 1023px) { ... }
+
+      md: { max: "767px" },
+      // => @media (max-width: 767px) { ... }
+
+      sm: { max: "639px" },
+      // => @media (max-width: 639px) { ... }
+
+      xs: { max: "479px" },
+      // => @media (max-width: 479px) { ... }
     },
   },
   plugins: [],
