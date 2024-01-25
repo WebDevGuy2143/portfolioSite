@@ -187,7 +187,7 @@ const webProjects = () => {
           />
 
           <div className="w-full grid grid-cols-12 center gap-24 xs:gap-0 gap-y-32 xl:gap-x-16 lg:w-full lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            <div className="col-span-12 sx:col-span-12 md:gap-0">
+            <div className="col-span-12 sm:col-span-12 md:gap-0">
               <FeaturedProject
                 title="Stephanie Pettis and RIO project"
                 img={project5}
@@ -198,7 +198,7 @@ const webProjects = () => {
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6 xs:col-span-12 xs:gap-0">
+            <div className="col-span-6 md:col-span-12 xs:gap-0">
               <Project
                 title="Trillo project"
                 img={project2}
@@ -209,7 +209,7 @@ const webProjects = () => {
                 type="Project"
               />
             </div>
-            <div className="col-span-6 xs:col-span-12 xs:gap-0">
+            <div className="col-span-6 md:col-span-12 xs:gap-0">
               <Project
                 title="Budget Application Project"
                 img={project3}
@@ -220,7 +220,7 @@ const webProjects = () => {
                 type="Project"
               />
             </div>
-            <div className="col-span-12 xs:col-span-12 xs:gap-0">
+            <div className="col-span-12 md:col-span-12 xs:gap-0">
               <FeaturedProject
                 title="Chance (PIG Game) project"
                 img={project4}
@@ -231,7 +231,7 @@ const webProjects = () => {
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6 xs:col-span-12 xs:gap-0">
+            <div className="col-span-6 md:col-span-12 xs:gap-0">
               <Project
                 title="Natour's Project"
                 img={project1}
@@ -242,7 +242,7 @@ const webProjects = () => {
                 type="Project"
               />
             </div>
-            <div className="col-span-6 xs:col-span-12 xs:gap-0">
+            <div className="col-span-6 md:col-span-12 xs:gap-0">
               <Project
                 title="Boilerplate Project"
                 img={project1}

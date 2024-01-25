@@ -22,13 +22,13 @@ export default function TheUltimateGuideToModernResponsiveWebDesignConcepts() {
             <TransitionEffect />
             <main className="flex items-center text-dark w-full min-h-screen dark:text-light md:pt-4 ">
                 <Layout className="pt-10">
-                    <div className="flex items-center justify-between w-full lg:flex-col">
+                    <div className="flex items-center justify-between w-full lg:flex-col overflow-hidden">
 
                         <div className="w-full flex flex-col lg:w-full">
                             <Image
                                 src={ArticleImg1}
                                 alt="Gene Howell"
-                                className="w-full h-auto relative rounded-md z-10 lg:flex-col lg:w-full md:pb-1 md:w-full lg:mb-16"
+                                className="w-full h-auto relative rounded-md z-10 lg:flex-col lg:w-full md:pb-1 md:w-full lg:mb-16 md:mb-0"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                                 suppressHydrationWarning
                             />
@@ -105,7 +105,7 @@ export default function TheUltimateGuideToModernResponsiveWebDesignConcepts() {
                                 <p className="text-xl pb-5">And hey, don't forget to sprinkle in some on-page SEO magic with cool things like keyword research, title tags, and meta descriptions to make sure your website stands out in search engine results! Let's be honest with ourselves. That is for another article!</p>
                                 <p className="text-xl pb-5">Now go forth, web design wizards, and create the most responsive and awesomely creative websites ever!</p>
                                 <p className="text-xl pb-5">Happy coding!</p>
-                                <div className="flex gap-3">
+                                <div className="flex gap-3 flex-wrap">
                                     <div className="text-xl text-blue-500 dark:hover:text-light hover:cursor-pointer">#responsivewebdesign</div>
                                     <div className="text-xl text-blue-500 dark:hover:text-light hover:cursor-pointer">#webdesign</div>
                                     <div className="text-xl text-blue-500 dark:hover:text-light hover:cursor-pointer">#moderndesign</div>
