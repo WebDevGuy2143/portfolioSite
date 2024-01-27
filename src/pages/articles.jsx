@@ -27,7 +27,7 @@ const Article = ({ img, title, date, link }) => {
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
     <li className="relative col-span-1 w-full h-fit p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[50%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-fit rounded-[2.5rem] bg-dark rounded-br-3xl" />
       <Link
         href={link}
         target="_blank"
