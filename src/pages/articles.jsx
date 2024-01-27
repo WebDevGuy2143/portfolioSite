@@ -73,7 +73,7 @@ const articles = () => {
           />
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
-              title="The Ultimate Guide To Modern Responsive WebDesign Concepts"
+              title="The Ultimate Guide To Modern Responsive Web Design Concepts"
               summary="Hey there! So, let's talk about something exciting today! 
               Let's talk about responsive web design! 
               Responsive web design has become a crucial part of modern web development. In an age where users are accessing the internet through a multitude of devices, responsive design ensures that websites adapt to the screen size and resolution of the device they're viewed on. This results in a seamless browsing experience for users, regardless of the device they're using. In this article, we'll cover the key concepts behind modern responsive web design and best practices for on-page SEO (Search Engine Optimization)."
@@ -94,7 +94,7 @@ const articles = () => {
           </h2>
           <ul>
             <Article
-              title="The Ultimate Guide To Modern Responsive WebDesign Concepts"
+              title="The Ultimate Guide To Modern Responsive Web Design Concepts"
               date="February 24th, 2023"
               link="/TheUltimateGuideToModernResponsiveWebDesignConcepts"
               img={ArticleImg1}
