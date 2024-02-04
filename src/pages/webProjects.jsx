@@ -34,6 +34,8 @@ const Tags = ({ text }) => {
           return "bg-purple-600 text-light"
         case "c++":
           return "bg-pink-600 text-light"
+        case "wordpress":
+          return "bg-indigo-600 text-light"
         default:
           return "bg-blue-100 text-blue-800"
       }
@@ -191,7 +193,7 @@ const webProjects = () => {
               <FeaturedProject
                 title="Stephanie Pettis and RIO project"
                 img={project5}
-                tags={["HTML", "CSS", "JavaScript", "PHP"]}
+                tags={["wordpress", "HTML", "CSS", "JavaScript", "PHP"]}
                 summary="Web dev project boilerplate descriptions highlight key technologies like front-end frameworks (e.g., React), back-end tools (Node.js, Django), version control (Git), package managers (npm, yarn), styling preprocessors (Sass, Less), and deployment platforms (Heroku, AWS). Essentially, it sets the groundwork for project success."
                 link="/"
                 github="/"

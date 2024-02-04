@@ -13,7 +13,7 @@ import TransitionEffect from "@/components/TransitionEffect"
 
 const Project = ({ title, img, link, alt }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative hover:bg-violet-700/75 transition-all">
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative hover:bg-purple-600 transition-all">
       <div className="relative w-full mx-auto">
         <Link href={link}>
           <Image
