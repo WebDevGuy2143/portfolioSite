@@ -100,6 +100,11 @@ const NavBar = () => {
           <CustomLink
             href="/articles"
             title="My Articles"
+            className="mx-4 text-slate-900 dark:text-light"
+          />
+          <CustomLink
+            href="/contact"
+            title="Contact Me"
             className="ml-4 text-slate-900 dark:text-light"
           />
         </nav>
@@ -172,6 +177,12 @@ const NavBar = () => {
             <CustomMobileLink
               href="/articles"
               title="My Articles"
+              className="text-dark dark:text-dark"
+              toggle={handleClick}
+            />
+            <CustomMobileLink
+              href="/contact"
+              title="Contact Me"
               className="text-dark dark:text-dark"
               toggle={handleClick}
             />
