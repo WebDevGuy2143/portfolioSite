@@ -72,7 +72,7 @@ export default function Home() {
                   <LinkArrow className="w-6 ml-1" />
                 </Link>
                 <Link
-                  href="mailto:genehowell9@gmail.com"
+                  href="/contact"
                   className="contactAnimate ml-4 text-lg font-medium capitalize text-slate-900 underline hover:underline-offset-4 hover:animate-bounce hover:ease-out dark:text-light mt-1 md:text-base"
                 >
                   Contact Me
