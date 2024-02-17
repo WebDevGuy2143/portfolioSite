@@ -5,19 +5,19 @@ const TransitionEffect = () => {
   return (
     <>
       <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen z-30 bg-[#9E2EBE]"
+        className="fixed top-0 bottom-0 right-full w-screen z-30 bg-[#b144ff]"
         initial={{ x: "100%", width: "100%" }}
         animate={{ x: "0%", width: "0%" }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
       />
       <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen z-20 bg-[#5533BF]"
+        className="fixed top-0 bottom-0 right-full w-screen z-20 bg-[#44BCFF]"
         initial={{ x: "100%", width: "100%" }}
         animate={{ x: "0%", width: "0%" }}
         transition={{ delay: 0.2, duration: 0.8, ease: "easeInOut" }}
       />
       <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen z-10 bg-[#4E52D7]"
+        className="fixed top-0 bottom-0 right-full w-screen z-10 bg-[#2D4057]"
         initial={{ x: "100%", width: "100%" }}
         animate={{ x: "0%", width: "0%" }}
         transition={{ delay: 0.4, duration: 0.8, ease: "easeInOut" }}
