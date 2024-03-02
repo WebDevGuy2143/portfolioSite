@@ -19,18 +19,19 @@ const contact = () => {
             <TransitionEffect />
             <main className="flex items-center text-dark w-full min-h-screen dark:text-light md:pt-4">
                 <Layout className="pt-0">
+                    <div className="flex items-center justify-center mb-8">
+                        <Image
+                            src={profilePic}
+                            alt="Gene Howell"
+                            className="w-auto h-auto rounded-full relative z-50 lg:flex-col lg:w-full md:pb-1 md:w-full lg:mb-16"
+                            priority
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 20vw, 20vw"
+                        />
+                    </div>
                     <div className="flex items-center justify-between w-full lg:flex-col">
                         {/* Contact Form Section */}
                         <div className="w-full lg:w-1/2 flex flex-col items-center px-20 py-0">
-                            <div className="flex items-center justify-center mb-8">
-                                <Image
-                                    src={profilePic}
-                                    alt="Gene Howell"
-                                    className="w-1/2 h-auto rounded-full relative z-50 lg:flex-col lg:w-full md:pb-1 md:w-full lg:mb-16"
-                                    priority
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 20vw, 20vw"
-                                />
-                            </div>
+
                             <div className='text-left'>
                                 <h1 className="text-2xl mb-3">Contact Gene Howell - Your Digital Media Specialist</h1>
                                 <p className='text-lg mb-3'>Hello! I'm Gene Howell, your experienced Digital Media Specialist. From web development to graphic design and video production, I offer a wide range of services. Let's collaborate to transform your vision into a captivating digital experience.</p>
@@ -69,3 +70,4 @@ const contact = () => {
 }
 
 export default contact
+
