@@ -36,7 +36,7 @@ const contact = () => {
                                 <h1 className="text-2xl mb-3">Contact Gene Howell - Your Digital Media Specialist</h1>
                                 <p className='text-lg mb-3'>Hello! I'm Gene Howell, your experienced Digital Media Specialist. From web development to graphic design and video production, I offer a wide range of services. Let's collaborate to transform your vision into a captivating digital experience.</p>
                                 <h1 className='text-2xl mb-3'>Let's Connect!</h1>
-                                <p className='text-lg mb-3'>Reach out via email or download my resume to explore how I can contribute to your projects. Excited to create something extraordinary together!</p>
+                                <p className='text-lg mb-3'>Reach out via email or download my resume to explore how I can contribute to your projects. I&apos;m excited to create something extraordinary together!</p>
                             </div>
                         </div>
 
