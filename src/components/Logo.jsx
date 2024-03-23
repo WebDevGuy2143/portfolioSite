@@ -6,7 +6,7 @@ const Logo = () => {
     <div className="flex items-center justify-center mt-2">
       <Link
         href="/"
-        className="w-16 h-16 bg-dark text-light flex items-center justify-center rounded-full text-2xl font-bold border border-solid border-transparent dark:border-light hover:scale-75 ease-in duration-300 hover:bg-purple-600"
+        className="w-16 h-16 bg-dark text-white flex items-center justify-center rounded-full text-2xl font-bold border border-solid border-transparent dark:border-light hover:scale-75 ease-in duration-300 hover:bg-purple-600"
       >
         GH
       </Link>

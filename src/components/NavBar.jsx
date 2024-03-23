@@ -38,7 +38,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
   return (
     <button
       href={href}
-      className={`${className} relative group text-light dark:text-dark my-2`}
+      className={`${className} relative group text-white dark:text-dark my-2`}
       onClick={handleClick}
     >
       {title}
@@ -61,7 +61,7 @@ const NavBar = () => {
   }
 
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between z-10 dark:text-light lg:px-16 relative z-1 md:!px-6 sm:px-8 xs:!pl-2">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between z-10 dark:text-white lg:px-16 relative z-1 md:!px-6 sm:px-8 xs:!pl-2">
       <button
         className="flex-col justify-center items-center cursor-pointer hidden lg:flex"
         onClick={handleClick}
@@ -85,27 +85,27 @@ const NavBar = () => {
           <CustomLink
             href="/"
             title="Home"
-            className="mr-4 text-slate-900 dark:text-light"
+            className="mr-4 text-slate-900 dark:text-white"
           />
           <CustomLink
             href="/about"
             title="About"
-            className="mx-4 text-slate-900 dark:text-light"
+            className="mx-4 text-slate-900 dark:text-white"
           />
           <CustomLink
             href="/myWorks"
             title="My Work"
-            className="mx-4 text-slate-900 dark:text-light"
+            className="mx-4 text-slate-900 dark:text-white"
           />
           <CustomLink
             href="/articles"
             title="My Articles"
-            className="mx-4 text-slate-900 dark:text-light"
+            className="mx-4 text-slate-900 dark:text-white"
           />
           <CustomLink
             href="/contact"
             title="Contact Me"
-            className="ml-4 text-slate-900 dark:text-light"
+            className="ml-4 text-slate-900 dark:text-white"
           />
         </nav>
 
@@ -141,7 +141,7 @@ const NavBar = () => {
 
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+            className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-white" : "bg-light text-dark"
               }`}
           >
             {mode === "dark" ? (
@@ -220,7 +220,7 @@ const NavBar = () => {
 
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
-              className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+              className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-white" : "bg-light text-dark"
                 }`}
             >
               {mode === "dark" ? (
