@@ -23,13 +23,13 @@ const Timeline = ({ events }) => {
 }
 
 const Circle = () => {
-    return (<div className='rounded-full w-4 h-4 bg-blue-500 mx-auto'>
+    return (<div className='rounded-full w-4 h-4 bg-primary dark:bg-primaryDark mx-auto'>
 
     </div>)
 }
 
 const Pillar = () => {
-    return (<div className='rounded-t-full rounded-b-full w-2 h-full bg-blue-500 mx-auto'>
+    return (<div className='bg-dark dark:bg-light w-[4px] h-full'>
 
     </div>)
 }

@@ -45,7 +45,7 @@ const timelineProject = () => {
     return (
         <>
             <Head>
-                <title>Gene&apos;s Portfolio | Graphic Design Project Page</title>
+                <title>Gene&apos;s Portfolio | Camp Icons Project Page</title>
                 <meta
                     name="description"
                     content="Gene Howell - Digital media specialist skilled in video, graphics, web development, and radio production. Transforming ideas into captivating digital experiences for maximum impact. Let's create something extraordinary!"
@@ -61,7 +61,7 @@ const timelineProject = () => {
                     <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
                         <div className="col-span-12 flex flex-col items-start justify-start xl:col-span-4 md:!order-2 md:!col-span-8">
                             <div className="container py-8">
-                                <h1 className="font-bold text-7xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-164">Project Timeline</h1>
+                                <h1 className="font-bold text-7xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-164">Camp Icons Project Timeline</h1>
                                 <Timeline events={events} />
                             </div>
                         </div>
