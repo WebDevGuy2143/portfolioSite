@@ -1,10 +1,10 @@
-import Layout from '@/components/Layout'
-import TransitionEffect from '@/components/TransitionEffect'
-import Head from 'next/head'
-import Image from 'next/image'
+import Layout from "@/components/Layout"
+import TransitionEffect from "@/components/TransitionEffect";
+import Head from "next/head";
+import Image from "next/image";
 import profilePic from "../../public/images/profile/profilePic4.png"
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 const contact = () => {
     return (
@@ -13,7 +13,7 @@ const contact = () => {
                 <title>Gene&apos;s Portfolio - Contact Me</title>
                 <meta
                     name="description"
-                    content="Gene Howell - Digital media specialist skilled in video, graphics, web development, and radio production. Transforming ideas into captivating digital experiences for maximum impact. Let's create something extraordinary!"
+                    content="Gene Howell - Digital media specialist skilled in video, graphics, web development, and radio production. Transforming ideas into captivating digital experiences for maximum impact. Let&apos;s create something extraordinary!"
                 />
             </Head>
             <TransitionEffect />
@@ -32,11 +32,11 @@ const contact = () => {
                         {/* Contact Form Section */}
                         <div className="w-full lg:w-1/2 flex flex-col items-center px-20 py-0">
 
-                            <div className='text-left'>
+                            <div className="text-left">
                                 <h1 className="text-2xl mb-3">Contact Gene Howell - Your Digital Media Specialist</h1>
-                                <p className='text-lg mb-3'>Hello! I'm Gene Howell, your experienced Digital Media Specialist. From web development to graphic design and video production, I offer a wide range of services. Let's collaborate to transform your vision into a captivating digital experience.</p>
-                                <h1 className='text-2xl mb-3'>Let's Connect!</h1>
-                                <p className='text-lg mb-3'>Reach out via email or download my resume to explore how I can contribute to your projects. I&apos;m excited to create something extraordinary together!</p>
+                                <p className="text-lg mb-3">Hello! I&apos;m Gene Howell, your experienced Digital Media Specialist. From web development to graphic design and video production, I offer a wide range of services. Let&apos;s collaborate to transform your vision into a captivating digital experience.</p>
+                                <h1 className="text-2xl mb-3">Let&apos;s Connect!</h1>
+                                <p className="text-lg mb-3">Reach out via email or download my resume to explore how I can contribute to your projects. I&apos;m excited to create something extraordinary together!</p>
                             </div>
                         </div>
 

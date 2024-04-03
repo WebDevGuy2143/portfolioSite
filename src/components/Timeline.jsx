@@ -9,7 +9,7 @@ const Timeline = ({ events }) => {
             <Circle />
             {events.map((event, key) => {
                 return <Fragment key={key}>
-                    <div className='grid grid-cols-[1fr_auto_1fr] gap-x-2 items-center mx-auto'>
+                    <div className='grid grid-cols-[1fr_auto_1fr] gap-x-5 items-center mx-auto'>
                         {event.direction === 'left' ? (<EventCard heading={event.title} subHeading={event.description} />) : (<div></div>)}
                         <Pillar />
                         {event.direction === 'right' ? (<EventCard heading={event.title} subHeading={event.description} />) : (<div></div>)}
@@ -23,7 +23,7 @@ const Timeline = ({ events }) => {
 }
 
 const Circle = () => {
-    return (<div className='rounded-full w-4 h-4 bg-primary dark:bg-primaryDark mx-auto'>
+    return (<div className='stroke-dark dark:stroke-light animate-none'><div className='rounded-full w-4 h-4 bg-primary dark:bg-primaryDark mx-auto animate-pulse' ></div>
 
     </div>)
 }
@@ -34,7 +34,7 @@ const Pillar = () => {
     </div>)
 }
 
-const EventCard = ({ heading, subHeading, image }) => {
+const EventCard = ({ heading, subHeading }) => {
     return (
         <div className='flex flex-col gap-y-2 border shadow-md rounded-xl p-4'>
             <div className='capitalize font-bold text-2xl dark:text-light sm:text-xl xs:text-lg'>
