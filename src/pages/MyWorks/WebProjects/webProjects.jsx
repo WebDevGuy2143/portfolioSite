@@ -1,15 +1,15 @@
-import React from "react"
-
 import AnimatedText from "@/components/AnimatedText"
 import Layout from "@/components/Layout"
 import { GithubIcon } from "@/components/icons"
 import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
-
-import project1 from "../../public/images/projects/GraphicDesign/graphicDesign.jpg"
-import project2 from "../../public/images/projects/GraphicDesign/project-1-campground-iconsProjectImage.png"
-
+import React from "react"
+import project1 from "../../../../public/images/projects/WebProjects/project1.png"
+import project2 from "../../../../public/images/projects/WebProjects/project2.png"
+import project3 from "../../../../public/images/projects/WebProjects/project3.png"
+import project4 from "../../../../public/images/projects/WebProjects/project4.png"
+import project5 from "../../../../public/images/projects/WebProjects/project5.jpg"
 import TransitionEffect from "@/components/TransitionEffect"
 
 const Tags = ({ text }) => {
@@ -22,12 +22,20 @@ const Tags = ({ text }) => {
 
     for (const tag of lowerCaseTags) {
       switch (tag) {
-        case "illustrator":
-          return "bg-amber-600 text-light"
-        case "photoshop":
+        case "html":
           return "bg-blue-600 text-light"
-        case "indesign":
+        case "css":
           return "bg-purple-600 text-light"
+        case "javascript":
+          return "bg-sky-600 text-light"
+        case "python":
+          return "bg-indigo-600 text-light"
+        case "php":
+          return "bg-purple-600 text-light"
+        case "c++":
+          return "bg-pink-600 text-light"
+        case "wordpress":
+          return "bg-indigo-600 text-light"
         default:
           return "bg-blue-100 text-blue-800"
       }
@@ -38,7 +46,7 @@ const Tags = ({ text }) => {
     <span
       className={`text-xs text-center font-medium mt-2 px-2 py-3 rounded-full self-center ${getTagClass()}`}
     >
-      {tags.join(", ")}
+      {text}
     </span>
   )
 }
@@ -73,9 +81,9 @@ const FeaturedProject = ({ type, title, tags, summary, img, link, github }) => {
           </h2>
         </Link>
         <div className="w-[90%] relative flex flex-wrap sm:justify-center space-x-3 space-y-3">
-          {tags.map((tagItem, index) => {
-            return <Tags key={index} text={tagItem} />
-          })}
+          {tags.map((tagItem, index) => (
+            <Tags key={index} text={tagItem} />
+          ))}
         </div>
 
         <p className="my-2 rounded-md font-medium text-dark dark:text-light sm:text-sm">
@@ -92,7 +100,7 @@ const FeaturedProject = ({ type, title, tags, summary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark  sm:px-4 sm:text-base "
+            className="hover:scale-110 transition-all ml-4 rounded-lg bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark  sm:px-4 sm:text-base "
           >
             View My Project
           </Link>
@@ -159,7 +167,7 @@ const Project = ({ title, summary, tags, type, img, link, github }) => {
   )
 }
 
-const graphicDesignProjects = () => {
+const webProjects = () => {
   return (
     <>
       <Head>
@@ -180,67 +188,67 @@ const graphicDesignProjects = () => {
             className="inline-block text-dark dark:text-light font-bold w-full capitalize mb-16 md:mb-6 md:!text-3xl !text-6xl !leading-tight lg:!text-6xl sm:!mb-8 sm:!text-3xl xs:!mb-5 xs:!text-4xl xl:text-6xl"
           />
 
-          <div className="w-full grid grid-cols-12 center gap-24 gap-y-32 xl:gap-x-16 lg:w-full lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            <div className="col-span-12 md:col-span-9">
+          <div className="w-full grid grid-cols-12 center gap-24 xs:gap-0 gap-y-32 xl:gap-x-16 lg:w-full lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12 sm:col-span-12 md:gap-0">
               <FeaturedProject
-                title="Campground Icons Project"
+                title="Stephanie Pettis and RIO project"
+                img={project5}
+                tags={["wordpress", "HTML", "CSS", "JavaScript", "PHP"]}
+                summary="Web dev project boilerplate descriptions highlight key technologies like front-end frameworks (e.g., React), back-end tools (Node.js, Django), version control (Git), package managers (npm, yarn), styling preprocessors (Sass, Less), and deployment platforms (Heroku, AWS). Essentially, it sets the groundwork for project success."
+                link="/"
+                github="/"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-6 md:col-span-12 xs:gap-0">
+              <Project
+                title="Trillo project"
                 img={project2}
-                tags={["Illustrator", "Photoshop"]}
-                summary="Web dev project boilerplate descriptions highlight key technologies like front-end frameworks (e.g., React), back-end tools (Node.js, Django), version control (Git), package managers (npm, yarn), styling preprocessors (Sass, Less), and deployment platforms (Heroku, AWS). Essentially, it sets the groundwork for project success."
-                link="/campGoundIconsProject"
-                github="/"
-                type="Featured Project"
-              />
-            </div>
-            <div className="col-span-6 md:col-span-9">
-              <Project
-                title="Boilerplate Project"
-                img={project1}
-                tags={["Illustrator", "Photoshop", "InDesign"]}
-                summary="Web dev project boilerplate descriptions highlight key technologies like front-end frameworks (e.g., React), back-end tools (Node.js, Django), version control (Git), package managers (npm, yarn), styling preprocessors (Sass, Less), and deployment platforms (Heroku, AWS). Essentially, it sets the groundwork for project success."
-                link="/"
-                github="/"
+                tags={["HTML", "CSS"]}
+                summary="Trillo is dummy Hotel Booking Agency. This website was made by me as a part of the Advanced CSS course on Udemy, by Jonas Schmedtmann."
+                link="https://webdevguy2143.github.io/TrilloApp/"
+                github="https://github.com/WebDevGuy2143/TrilloApp"
                 type="Project"
               />
             </div>
-            <div className="col-span-6 md:col-span-9">
+            <div className="col-span-6 md:col-span-12 xs:gap-0">
               <Project
-                title="Boilerplate Project"
-                img={project1}
-                tags={["Illustrator", "Photoshop", "InDesign"]}
-                summary="Web dev project boilerplate descriptions highlight key technologies like front-end frameworks (e.g., React), back-end tools (Node.js, Django), version control (Git), package managers (npm, yarn), styling preprocessors (Sass, Less), and deployment platforms (Heroku, AWS). Essentially, it sets the groundwork for project success."
-                link="/"
-                github="/"
+                title="Budget Application Project"
+                img={project3}
+                tags={["HTML", "CSS", "JavaScript"]}
+                summary="This was a web application that I coded along with Jonas Schmedtmann. It is a JavaScript budget tracking app that uses plain JavaScript (ES6), HTML, and CSS3."
+                link="https://webdevguy2143.github.io/BudgetApplication/"
+                github="https://github.com/WebDevGuy2143/BudgetApplication"
                 type="Project"
               />
             </div>
-            <div className="col-span-12 md:col-span-9">
+            <div className="col-span-12 md:col-span-12 xs:gap-0">
               <FeaturedProject
-                title="Boilerplate Featured project"
-                img={project1}
-                tags={["Illustrator", "Photoshop", "InDesign"]}
-                summary="Web dev project boilerplate descriptions highlight key technologies like front-end frameworks (e.g., React), back-end tools (Node.js, Django), version control (Git), package managers (npm, yarn), styling preprocessors (Sass, Less), and deployment platforms (Heroku, AWS). Essentially, it sets the groundwork for project success."
-                link="/"
-                github="/"
+                title="Chance (PIG Game) project"
+                img={project4}
+                tags={["HTML", "CSS", "JavaScript"]}
+                summary="This is a two player game. Each player gets to roll the dice, choose whether to roll again, or keep their score. The first person to score a hundred points wins the game."
+                link="https://webdevguy2143.github.io/ChanceGame/"
+                github="https://github.com/WebDevGuy2143/ChanceGame"
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6 md:col-span-9">
+            <div className="col-span-6 md:col-span-12 xs:gap-0">
               <Project
-                title="Boilerplate Project"
+                title="Natour's Project"
                 img={project1}
-                tags={["Illustrator", "Photoshop", "InDesign"]}
-                summary="Web dev project boilerplate descriptions highlight key technologies like front-end frameworks (e.g., React), back-end tools (Node.js, Django), version control (Git), package managers (npm, yarn), styling preprocessors (Sass, Less), and deployment platforms (Heroku, AWS). Essentially, it sets the groundwork for project success."
-                link="/"
-                github="/"
+                tags={["HTML", "CSS", "JavaScript"]}
+                summary="This is a project I did for the Advanced CSS Udemy course by Jonas Schmedtmann. I implemented all of the advance CSS techniques used in today's world."
+                link="https://webdevguy2143.github.io/Natours/"
+                github="https://github.com/WebDevGuy2143/Natours"
                 type="Project"
               />
             </div>
-            <div className="col-span-6 md:col-span-9">
+            <div className="col-span-6 md:col-span-12 xs:gap-0">
               <Project
                 title="Boilerplate Project"
                 img={project1}
-                tags={["Illustrator", "Photoshop", "InDesign"]}
+                tags={["HTML", "CSS", "JavaScript", "PHP"]}
                 summary="Web dev project boilerplate descriptions highlight key technologies like front-end frameworks (e.g., React), back-end tools (Node.js, Django), version control (Git), package managers (npm, yarn), styling preprocessors (Sass, Less), and deployment platforms (Heroku, AWS). Essentially, it sets the groundwork for project success."
                 link="/"
                 github="/"
@@ -254,4 +262,4 @@ const graphicDesignProjects = () => {
   )
 }
 
-export default graphicDesignProjects
+export default webProjects

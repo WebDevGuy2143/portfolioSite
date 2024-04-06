@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { CampIconsPic } from "../../public/images/projects/GraphicDesign/Icons2.png";
+import { CampIconsPic } from "../../../../public/images/projects/GraphicDesign/Icons2.png";
 import Head from 'next/head';
 import TransitionEffect from '@/components/TransitionEffect';
 import Layout from '@/components/Layout';

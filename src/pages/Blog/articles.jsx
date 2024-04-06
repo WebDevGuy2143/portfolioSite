@@ -4,8 +4,8 @@ import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
-import ArticleImg1 from "../../public/images/articles/Article1Img.png"
-import article3 from "../../public/images/articles/create modal component in react using react portals.png"
+import ArticleImg1 from "../../../public/images/articles/Article1Img.png"
+import article3 from "../../../public/images/articles/create modal component in react using react portals.png"
 import TransitionEffect from "@/components/TransitionEffect"
 
 
@@ -78,7 +78,7 @@ const articles = () => {
               Let's talk about responsive web design! 
               Responsive web design has become a crucial part of modern web development. In an age where users are accessing the internet through a multitude of devices, responsive design ensures that websites adapt to the screen size and resolution of the device they're viewed on. This results in a seamless browsing experience for users, regardless of the device they're using. In this article, we'll cover the key concepts behind modern responsive web design and best practices for on-page SEO (Search Engine Optimization)."
               time="11 min read"
-              link="/TheUltimateGuideToModernResponsiveWebDesignConcepts"
+              link="TheUltimateGuideToModernResponsiveWebDesignConcepts"
               img={ArticleImg1}
             />
             <FeaturedArticle

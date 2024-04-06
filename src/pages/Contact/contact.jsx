@@ -2,7 +2,7 @@ import Layout from "@/components/Layout"
 import TransitionEffect from "@/components/TransitionEffect";
 import Head from "next/head";
 import Image from "next/image";
-import profilePic from "../../public/images/profile/profilePic4.png"
+import profilePic from "../../../public/images/profile/profilePic4.png"
 import Link from "next/link";
 import React from "react";
 

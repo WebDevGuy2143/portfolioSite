@@ -4,11 +4,11 @@ import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
-import project1 from "../../public/images/projects/WebProjects/WebDev.jpg"
-import project2 from "../../public/images/projects/GraphicDesign/graphicDesign.jpg"
-import project3 from "../../public/images/projects/VideoProduction/videoProduction.jpg"
-import project4 from "../../public/images/projects/AudioProduction/audioProduction.jpg"
-import project5 from "../../public/images/projects/SoftwareDevelopment/SoftwareDevPic.jpg"
+import project1 from "../../../public/images/projects/WebProjects/WebDev.jpg"
+import project2 from "../../../public/images/projects/GraphicDesign/graphicDesign.jpg"
+import project3 from "../../../public/images/projects/VideoProduction/videoProduction.jpg"
+import project4 from "../../../public/images/projects/AudioProduction/audioProduction.jpg"
+import project5 from "../../../public/images/projects/SoftwareDevelopment/SoftwareDevPic.jpg"
 import TransitionEffect from "@/components/TransitionEffect"
 
 const Project = ({ title, img, link, alt }) => {
@@ -56,7 +56,7 @@ const myWorks = () => {
               <Project
                 title="Web Development"
                 img={project1}
-                link="/webProjects"
+                link="/MyWorks/WebProjects/webProjects"
                 alt="Web Development Projects"
               />
             </div>
@@ -64,7 +64,7 @@ const myWorks = () => {
               <Project
                 title="Graphic Design"
                 img={project2}
-                link="/graphicDesignProjects"
+                link="/MyWorks/GraphicDesignProjects/graphicDesignProjects"
                 alt="Graphic Design Projects"
               />
             </div>

@@ -88,22 +88,22 @@ const NavBar = () => {
             className="mr-4 text-slate-900 dark:text-white"
           />
           <CustomLink
-            href="/about"
+            href="/About/about"
             title="About"
             className="mx-4 text-slate-900 dark:text-white"
           />
           <CustomLink
-            href="/myWorks"
+            href="/MyWorks/myWorks"
             title="My Work"
             className="mx-4 text-slate-900 dark:text-white"
           />
           <CustomLink
-            href="/articles"
+            href="/Blog/articles"
             title="My Articles"
             className="mx-4 text-slate-900 dark:text-white"
           />
           <CustomLink
-            href="/contact"
+            href="/Contact/contact"
             title="Contact Me"
             className="ml-4 text-slate-900 dark:text-white"
           />
@@ -163,25 +163,25 @@ const NavBar = () => {
               toggle={handleClick}
             />
             <CustomMobileLink
-              href="/about"
+              href="/About/about"
               title="About"
               className="text-dark dark:text-dark"
               toggle={handleClick}
             />
             <CustomMobileLink
-              href="/myWorks"
+              href="/MyWorks/myWorks"
               title="My Work"
               className="text-dark dark:text-dark"
               toggle={handleClick}
             />
             <CustomMobileLink
-              href="/articles"
+              href="/Articles/articles"
               title="My Articles"
               className="text-dark dark:text-dark"
               toggle={handleClick}
             />
             <CustomMobileLink
-              href="/contact"
+              href="/Contact/contact"
               title="Contact Me"
               className="text-dark dark:text-dark"
               toggle={handleClick}

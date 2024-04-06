@@ -2,10 +2,10 @@
 
 import Head from "next/head"
 import Image from "next/image"
-import profilePic from "../../public/images/profile/profilePic4.png"
+import profilePic from "../../../public/images/profile/profilePic4.png"
 import Layout from "@/components/Layout"
 import TransitionEffect from "@/components/TransitionEffect"
-import ArticleImg1 from "../../public/images/articles/Article1Img.png"
+import ArticleImg1 from "../../../public/images/articles/Article1Img.png"
 import Link from "next/link"
 
 export default function TheUltimateGuideToModernResponsiveWebDesignConcepts() {
