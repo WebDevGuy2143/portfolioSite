@@ -176,7 +176,7 @@ const NavBar = () => {
             />
             <CustomMobileLink
               href="/Blog/articles"
-              title="My Articles"
+              title="my Articles"
               className="text-dark dark:text-dark"
               toggle={handleClick}
             />
