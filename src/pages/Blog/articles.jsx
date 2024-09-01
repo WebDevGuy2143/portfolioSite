@@ -5,7 +5,6 @@ import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import ArticleImg1 from "../../../public/images/articles/Article1Img.png"
-import article3 from "../../../public/images/articles/create modal component in react using react portals.png"
 import TransitionEffect from "@/components/TransitionEffect"
 
 
@@ -82,8 +81,8 @@ const articles = () => {
               img={ArticleImg1}
             />
             <FeaturedArticle
-              title="Build A Custom Pagination Component In ReachJS From Scratch"
-              summary="Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
+              title="Elevating Your Web Development Journey with Next.js "
+              summary="Learn how to properly build a Nextjs website from scratch. Utilize built in features such as Image optimization and SEO"
               time="9 min read"
               link="/"
               img={ArticleImg1}
@@ -103,37 +102,37 @@ const articles = () => {
               title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               date="December 21, 2023"
               link="/"
-              img={article3}
+              img={ArticleImg1}
             />
             <Article
               title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               date="December 21, 2023"
               link="/"
-              img={article3}
+              img={ArticleImg1}
             />
             <Article
               title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               date="December 21, 2023"
               link="/"
-              img={article3}
+              img={ArticleImg1}
             />
             <Article
               title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               date="December 21, 2023"
               link="/"
-              img={article3}
+              img={ArticleImg1}
             />
             <Article
               title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               date="December 21, 2023"
               link="/"
-              img={article3}
+              img={ArticleImg1}
             />
             <Article
               title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               date="December 21, 2023"
               link="/"
-              img={article3}
+              img={ArticleImg1}
             />
           </ul>
         </Layout>

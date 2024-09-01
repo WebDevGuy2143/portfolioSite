@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Image from 'next/image';
-import IconsPic from "../../public/images/projects/GraphicDesign/Icons2.png";
+import IconsPic from "../../public/images/Icons2.png";
 
 const Timeline = ({ events }) => {
 

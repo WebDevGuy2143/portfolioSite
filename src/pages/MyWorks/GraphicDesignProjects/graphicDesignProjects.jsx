@@ -7,8 +7,8 @@ import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 
-import project1 from "../../../../public/images/projects/GraphicDesign/graphicDesign.jpg"
-import project2 from "../../../../public/images/projects/GraphicDesign/project-1-campground-iconsProjectImage.png"
+import project1 from "../../../../public/images/graphicDesign.jpg"
+import project2 from "../../../../public/images/project-1-campground-iconsProjectImage.png"
 
 import TransitionEffect from "@/components/TransitionEffect"
 
